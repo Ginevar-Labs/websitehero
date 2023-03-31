@@ -1,0 +1,21 @@
+
+.navbar-custom {
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: none;
+}
+
+.nextui-navbar-container {
+    background-color: #1E1D1D !important;
+}
+
+.navbar-custom-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 840px) {
+    .navbar-custom-toggle {
+        display: block;
+    }
+}
