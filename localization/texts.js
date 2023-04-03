@@ -15,9 +15,14 @@ export default {
         "es": "Trabaja con nosotros"
     },
     "MENU_WORK": {
-        "en": "Past Work",
+        "en": "Projects",
         "it": "Progetti",
         "es": "Proyectos"
+    },
+    "MENU_SOFTWARE": {
+        "en": "Software",
+        "it": "Tecnologie",
+        "es": "Tecnologias"
     },
     "MENU_WHATWEDO": {
         "en": "What we do",

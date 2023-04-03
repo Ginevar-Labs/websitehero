@@ -12,27 +12,27 @@ export default function Home({ origin }) {
     {
         code: 'index-wwd',
         name: LocalizationTexts.MENU_WHATWEDO[cookies.lang],
-        link: '#'
-    },
-    {
-        code: 'software',
-        name: 'Software',
-        link: '#'
+        link: '#what-we-do'
     },
     {
         code: 'index-work',
         name: LocalizationTexts.MENU_WORK[cookies.lang],
-        link: '#'
+        link: '#projects-and-past-work'
+    },
+    {
+        code: 'software',
+        name: LocalizationTexts.MENU_SOFTWARE[cookies.lang],
+        link: '#software'
     },
     {
         code: 'index-careers',
         name: LocalizationTexts.MENU_CAREERS[cookies.lang],
-        link: '#'
+        link: '#careers'
     },
     {
         code: 'index-contact',
         name: LocalizationTexts.MENU_CONTACT[cookies.lang],
-        link: '#'
+        link: '#contact'
     },
     ];
   
@@ -50,12 +50,16 @@ export default function Home({ origin }) {
         </Head>
 
         <header>
-            <Navbar className='navbar-custom' variant='sticky'>
+            <div style={{
+                boxSizing: 'border-box',
+                maxWidth: '100%'
+            }}>
+                <Navbar shouldHideOnScroll className='navbar-custom' variant='sticky'>
                 <Navbar.Brand>
                     <Navbar.Toggle className='navbar-custom-toggle' aria-label="toggle navigation" css={{
                     marginRight: '20px'
                     }}/>
-                    <Image width={200} height={30} src='/assets/logo_ginevar_hd.png'/>
+                    <a href='#page-index'><Image width={200} height={30} src='/assets/logo_ginevar_hd.png'/></a>
                 </Navbar.Brand>
                 <Navbar.Content  
                     // enableCursorHighlight 
@@ -132,7 +136,7 @@ export default function Home({ origin }) {
                 </Navbar.Content>
                 <Navbar.Collapse style={{
                     zIndex: '9999',
-                    marginTop: '20px'
+                    marginTop: '50px'
                 }}>
                     {collapseItems.map((item, index) => (
                     <Navbar.CollapseItem key={index}>
@@ -147,6 +151,19 @@ export default function Home({ origin }) {
                         </Link>
                     </Navbar.CollapseItem>
                     ))}
+                    <hr/><br/>
+                    <Navbar.CollapseItem>
+                        <Link
+                        color="inherit"
+                        css={{
+                            minWidth: "100%",
+                            color: 'gray'
+                        }}
+                        href='#'
+                        >
+                            {LocalizationTexts.MENU_CHANGE_LANGUAGE[cookies.lang]}:
+                        </Link>
+                    </Navbar.CollapseItem>
                     <Navbar.CollapseItem>
                         <Link
                         color="inherit"
@@ -154,12 +171,47 @@ export default function Home({ origin }) {
                             minWidth: "100%",
                         }}
                         href='#'
+                        onClick={() => {
+                            changeLanguage('en');
+                            return;
+                        }}
                         >
-                            {LocalizationTexts.MENU_CHANGE_LANGUAGE[cookies.lang]}
+                            {LocalizationTexts.MENU_LANG_ENGLISH[cookies.lang]}
+                        </Link>
+                    </Navbar.CollapseItem>
+                    <Navbar.CollapseItem>
+                        <Link
+                        color="inherit"
+                        css={{
+                            minWidth: "100%",
+                        }}
+                        href='#'
+                        onClick={() => {
+                            changeLanguage('es');
+                            return;
+                        }}
+                        >
+                            {LocalizationTexts.MENU_LANG_SPANISH[cookies.lang]}
+                        </Link>
+                    </Navbar.CollapseItem>
+                    <Navbar.CollapseItem>
+                        <Link
+                        color="inherit"
+                        css={{
+                            minWidth: "100%",
+                        }}
+                        href='#'
+                        onClick={() => {
+                            changeLanguage('it');
+                            return;
+                        }}
+                        >
+                            {LocalizationTexts.MENU_LANG_ITALIAN[cookies.lang]}
                         </Link>
                     </Navbar.CollapseItem>
                 </Navbar.Collapse>
             </Navbar>
+            </div>
         </header>
     </>
   )
