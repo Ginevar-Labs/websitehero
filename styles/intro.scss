@@ -83,16 +83,16 @@
     h1 {
         position: relative;
         font-family: 'Open Sans';
-        font-size: 36px;
+        font-size: 30px;
         // line-height: 110px;
         
         height: 60px;
         margin: 0px;
         margin-top: 68px;
         padding-left: 50px;
-        width: 25%;
+        width: 100%;
         float: left;
-        background: -webkit-linear-gradient(left, red , rgb(207, 14, 152));
+        background: -webkit-linear-gradient(left, rgb(255, 0, 72) , rgb(207, 14, 152));
         background: -o-linear-gradient(right, red, rgb(207, 14, 152));
         background: -moz-linear-gradient(right, red, rgb(207, 14, 152));
         background: linear-gradient(to right, red , rgb(207, 14, 152)); 
@@ -101,7 +101,7 @@
     }
 
     .gnvTBline {
-        position: relative;
+        position: absolute;
         float: left;
         height: 6px;
         width: 75%;
@@ -110,8 +110,9 @@
         background: -o-linear-gradient(right, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0));
         background: -moz-linear-gradient(right, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0));
         background: linear-gradient(to right, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0)); 
-        margin-top: 104px;
-        margin-bottom: 60px;
+        margin-top: 110px;
+        margin-bottom: 50px;
+        margin-left: 50px;
         
     }
 
@@ -154,14 +155,15 @@
     h1 {
         position: relative;
         font-family: 'Open Sans';
-        font-size: 36px;
+        font-size: 30px;
         // line-height: 110px;
         
         height: 60px;
         margin: 0px;
         margin-top: 68px;
-        padding-left: 50px;
-        width: 25%;
+        padding-right: 50px;
+        width: 100%;
+        text-align: right;
         
         float: left;
         background: -webkit-linear-gradient(left, red , rgb(207, 14, 152));
@@ -173,17 +175,20 @@
     }
 
     .gnvTBline {
-        position: relative;
+        position: absolute;
         float: left;
         height: 6px;
         width: 75%;
+        margin-left: calc(25% - 50px);
         border-radius: 20px;
         background: -webkit-linear-gradient(right , rgb(207, 14, 152), rgba(255, 0, 0, 0.529), rgba(255, 0, 0, 0));
         background: -o-linear-gradient(left, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0));
         background: -moz-linear-gradient(left, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0));
         background: linear-gradient(to left, rgb(207, 14, 152), rgba(255, 0, 0, 0.529),  rgba(255, 0, 0, 0)); 
-        margin-top: 104px;
-        margin-bottom: 60px;
+        margin-top: 110px;
+        margin-bottom: 50px;
+        margin-right: 50px;
+        
         
     }
 
@@ -198,10 +203,99 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    // margin-bottom: 200px;
 
     &::after {
         content: "";
         clear: both;
+    }
+
+}
+
+.gnvDescBox {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    color: rgba(255, 255, 255, 0.588);
+    text-align: justify;
+}
+
+.gnvDescBoxRight {
+    width: 80%;
+    margin-left: 20%;
+    text-align: right;
+}
+
+.gnvDescBoxButton {
+    color: #AD37A9;
+    border: 2px solid #AD37A9;
+    background-color: transparent;
+    border-radius: 6px;
+    padding: 10px 20px;
+    transition: 0.2s all ease-out;
+    width: 180px;
+    margin-right: calc(50% - 90px);
+    margin-left: calc(50% - 90px);
+    // margin-bottom: 40px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #ad37a929;
+    }
+}
+
+.gnvDescBoxButtonRight {
+    margin-right: 0px;
+    margin-left: calc(90% - 180px);
+}
+
+.gnvPinkBG {
+        background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ff14ef4a,#f50d0d4f, rgba(255, 255, 255, 0));
+}
+
+.gnvOpenPos {
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 70px;
+    padding: 0px 50px;
+    position: relative;
+
+    .gnvOP-nopos {
+        text-align: center;
+        color: #a39fa2;
+        opacity: 0.7;
+        font-size: 20px;
+    }
+
+    .gnvOP-random {
+        text-align: justify;
+        color: #C58FB0;
+        font-size: 20px;
+    }
+
+    .gnvOpenPosLineLeft {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-color: blue;
+        top: 0px;
+        left: 10px;
+        border-radius: 20px;
+        background: -webkit-linear-gradient(#ff18f099,#f50d0d4f, rgba(255, 255, 255, 0));
+    }
+
+    .gnvOpenPosLineRight {
+        position: absolute;
+        width: 10px;
+        height: 100%;
+        background-color: blue;
+        top: 0px;
+        right: 10px;
+        border-radius: 20px;
+        background: -webkit-linear-gradient(#ff18f099,#f50d0d4f, rgba(255, 255, 255, 0));
     }
 }
 
@@ -246,4 +340,11 @@
             margin-left: 50px;
         }
     }
+
+    .gnvDescBoxRight {
+        margin-left: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    
 }

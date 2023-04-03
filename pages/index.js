@@ -3,7 +3,7 @@ import Image from 'next/image'
 import dynamic from 'next/dynamic'
 import { Grid, Card, Text, Link, Spacer } from '@nextui-org/react';
 // import Navbar from './../components/Navbar'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 
 const Navbar = dynamic(
@@ -13,6 +13,7 @@ const Navbar = dynamic(
 
 export default function Home() {
   const [cookies, setCookie] = useCookies(['lang']);
+  const [origin, setOrigin] = useState('');
 
   useEffect(() => {
     loadInitialData();
@@ -36,7 +37,10 @@ export default function Home() {
   return (
     <div>
       <Navbar
-        origin={'index-wwd'}
+        origin={origin}
+        onGoLink={(code) => {
+          setOrigin(code)
+        }}
       />
       <div className='cubeAnimated'/>
       <div className='cubeAnimated'/>
@@ -94,20 +98,51 @@ export default function Home() {
             <h1>Careers</h1>
           </div>
         </div>
+        <p className='gnvDescBox' style={{
+            marginBottom: '40px',
+            marginTop: '240px'
+          }}>
+          If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume for consideration. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.
+          </p>
 
-        <Spacer y={10}/>
+        <div className='gnvOpenPos'>
+          <h2>Open Positions</h2>
+          <Spacer y={3}/>
+          <p className='gnvOP-nopos'>No open positions at the moment</p>
+          <Spacer y={3}/>
+          <p className='gnvOP-random'>Whether you have experience in software development, design, marketing and sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment.</p>
 
-        <div id='contact' className='gnvTitleContainer'>
-          <div className='gnvTitleBox'>
-            <div className='gnvTBSquare'/>
-            <h1>Contact</h1>
-            <div className='gnvTBline'/>
+          <div className='gnvOpenPosLineLeft'/>
+          <div className='gnvOpenPosLineRight'/>
+        </div>
+
+        <button className='gnvDescBoxButton'>Apply</button>
+
+        <div className='gnvPinkBG'>
+          <div id='contact' className='gnvTitleContainer'>
+            <div className='gnvTitleBox'>
+              <div className='gnvTBSquare'/>
+              <h1>Contact</h1>
+              <div className='gnvTBline'/>
+            </div>
           </div>
+            <Spacer y={5}/>
+            <p className='gnvDescBox gnvDescBoxRight' style={{
+              marginTop: '200px',
+              marginBottom: '40px'
+            }}>
+            At Ginevar, we are dedicated to providing top-notch software development services to businesses of all sizes. Our team of experts is always available to answer any questions and help you with your software development needs. <br/> If you have any questions or would like to learn more about our services, please do not hesitate to contact us using the information below.
+            </p>
+
+            <br/>
+
+            <button className='gnvDescBoxButton gnvDescBoxButtonRight'>Contact us</button>
         </div>
 
       </main>
 
       <footer>
+        <p>footer</p>
       </footer>
     </div>
   )

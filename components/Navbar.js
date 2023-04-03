@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
 
-export default function Home({ origin }) {
+export default function Home({ origin, onGoLink }) {
     const [cookies, setCookie] = useCookies(['lang']);
     const collapseItems = [
     {
@@ -68,7 +68,9 @@ export default function Home({ origin }) {
                     variant="highlight-rounded"
                 >
                     {collapseItems.map((item, index) => (
-                        <Navbar.Link key={index} isActive={item.code == origin} href={item.link}>{item.name}</Navbar.Link>
+                        <Navbar.Link onClick={() => {
+                            onGoLink(item.code)
+                        }} key={index} isActive={item.code == origin} href={item.link}>{item.name}</Navbar.Link>
                         ))}
                     <Dropdown isBordered>
                             <Navbar.Item>
