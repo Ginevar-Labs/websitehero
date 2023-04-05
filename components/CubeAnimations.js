@@ -22,11 +22,13 @@ export default function CubeAnimations({  }) {
       }}/>
       <div className='cubeAnimated cubeAnimatedGamma' style={{
         left: '35vw',
-        top: '280vh'
+        top: '280vh',
+        animationDelay: '0.9s'
       }}/>
       <div className='cubeAnimated cubeAnimatedDelta' style={{
         left: '80vw',
-        top: '260vh'
+        top: '260vh',
+        animationDelay: '3.1s'
       }}/>
       <div className='cubeAnimated cubeAnimatedDelta' style={{
         left: '10vw',
@@ -42,15 +44,18 @@ export default function CubeAnimations({  }) {
       }}/>
       <div className='cubeAnimated cubeAnimatedDelta' style={{
         left: '20vw',
-        top: '400vh'
+        top: '400vh',
+        animationDelay: '0.6s'
       }}/>
       <div className='cubeAnimated cubeAnimatedGamma' style={{
         left: '70vw',
-        top: '440vh'
+        top: '440vh',
+        animationDelay: '4.5s'
       }}/>
       <div className='cubeAnimated cubeAnimatedDelta' style={{
         left: '40vw',
-        top: '470vh'
+        top: '470vh',
+        animationDelay: '2.2s'
       }}/>
       <div className='cubeAnimated cubeAnimatedAlpha' style={{
         left: '75vw',
@@ -59,7 +64,8 @@ export default function CubeAnimations({  }) {
       }}/>
       <div className='cubeAnimated cubeAnimatedDelta' style={{
         left: '20vw',
-        top: '520vh'
+        top: '520vh',
+        animationDelay: '0.9s'
       }}/>
       <div className='cubeAnimated cubeAnimatedLogo' style={{
         left: '40vw',
