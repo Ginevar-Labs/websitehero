@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import '../styles/navbar.scss'
 import '../styles/globals.scss'
 import '../styles/intro.scss'
+import '../styles/footer.scss'
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 import { CookiesProvider } from 'react-cookie';
 

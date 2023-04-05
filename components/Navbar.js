@@ -68,7 +68,7 @@ export default function Home({ origin, onGoLink }) {
                     variant="highlight-rounded"
                 >
                     {collapseItems.map((item, index) => (
-                        <Navbar.Link onClick={() => {
+                        <Navbar.Link className='navbarItemsLinks' onClick={() => {
                             onGoLink(item.code)
                         }} key={index} isActive={item.code == origin} href={item.link}>{item.name}</Navbar.Link>
                         ))}

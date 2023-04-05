@@ -91,32 +91,34 @@ export default function Home() {
         
         <Spacer y={10}/>
         
-        <div id='careers' className='gnvTitleContainer'>
-          <div className='gnvTitleBoxRight'>
-            <div className='gnvTBSquare'/>
-            <div className='gnvTBline'/>
-            <h1>Careers</h1>
+        <div>
+          <div id='careers' className='gnvTitleContainer'>
+            <div className='gnvTitleBoxRight'>
+              <div className='gnvTBSquare'/>
+              <div className='gnvTBline'/>
+              <h1>Careers</h1>
+            </div>
           </div>
+          <p className='gnvDescBox' style={{
+              marginBottom: '40px',
+              marginTop: '240px'
+            }}>
+            If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume for consideration. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.
+            </p>
+
+          <div className='gnvOpenPos'>
+            <h2>Open Positions</h2>
+            <Spacer y={3}/>
+            <p className='gnvOP-nopos'>No open positions at the moment</p>
+            <Spacer y={3}/>
+            <p className='gnvOP-random'>Whether you have experience in software development, design, marketing and sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment.</p>
+
+            <div className='gnvOpenPosLineLeft'/>
+            <div className='gnvOpenPosLineRight'/>
+          </div>
+
+          <a href='mailto:careers@ginevar.com'><button className='gnvDescBoxButton'>Apply</button></a>
         </div>
-        <p className='gnvDescBox' style={{
-            marginBottom: '40px',
-            marginTop: '240px'
-          }}>
-          If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume for consideration. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.
-          </p>
-
-        <div className='gnvOpenPos'>
-          <h2>Open Positions</h2>
-          <Spacer y={3}/>
-          <p className='gnvOP-nopos'>No open positions at the moment</p>
-          <Spacer y={3}/>
-          <p className='gnvOP-random'>Whether you have experience in software development, design, marketing and sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment.</p>
-
-          <div className='gnvOpenPosLineLeft'/>
-          <div className='gnvOpenPosLineRight'/>
-        </div>
-
-        <button className='gnvDescBoxButton'>Apply</button>
 
         <div className='gnvPinkBG'>
           <div id='contact' className='gnvTitleContainer'>
@@ -136,13 +138,55 @@ export default function Home() {
 
             <br/>
 
-            <button className='gnvDescBoxButton gnvDescBoxButtonRight'>Contact us</button>
+            <a href='mailto:contact@ginevar.com'><button className='gnvDescBoxButton gnvDescBoxButtonRight'>Contact us</button></a>
         </div>
 
       </main>
 
       <footer>
-        <p>footer</p>
+        <div className='gnvFooterContainer'>
+          <div className='gnvFooterBanner'>
+            <img src='/assets/squared_logo.png'/>
+            <p><b>Ginevar</b></p>
+            <p>Monza, Italy</p>
+            <p>ID</p>
+          </div>
+          <div className='gnvFooterLinksColumn'>
+            <div className='gnvFLCLeft'>
+              <a href='#'><h1>What we do</h1></a>
+              <a href='#'><p>Websites</p></a>
+              <a href='#'><p>Motion Graphics</p></a>
+              <a href='#'><p>UX/UI</p></a>
+              <a href='#'><p>Backend</p></a>
+            </div>
+            <div className='gnvFLCRight'>
+              <div style={{height: '30px'}}/>
+              <a href='#'><p>Mobile Apps</p></a>
+              <a href='#'><p>Smart Contracts</p></a>
+              <a href='#'><p>Games</p></a>
+              <a href='#'><p>Consultancy</p></a>
+            </div>
+          </div>
+          <div className='gnvFooterLinksColumn'>
+          <div className='gnvFLCLeft'>
+            <a href='#'><h1>Software</h1></a>
+            <div style={{height: '30px'}}/>
+            <a href='#'><h1>Work</h1></a>
+              <a href='#'><p>Working Method</p></a>
+              <a href='#'><p>Portfolio</p></a>
+          </div>
+          <div className='gnvFLCRight'>
+          <a href='#'><h1>Careers</h1></a>
+            <div style={{height: '30px'}}/>
+            <a href='#'><h1>Contact</h1></a>
+          </div>
+          </div>
+        </div>
+        <br/>
+        <Spacer y={15}/>
+        <div style={{textAlign: 'center', width: '100%', marginBottom: '40px', marginTop: '40px'}}>
+          <p>© Ginevar 2023</p>
+        </div>
       </footer>
     </div>
   )
