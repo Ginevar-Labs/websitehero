@@ -66,7 +66,33 @@ export default function Home() {
             <div className='gnvTBline'/>
           </div>
         </div>
-        
+        <Spacer y={10}/>
+        <div className='gnvWWDBoxContainer'>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Websites</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Motion Graphics</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>UX/UI</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Backend</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Mobile Apps</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Smart Contracts</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Games</p>
+          </div>
+          <div className='gnvWWDBox'>
+            <p className='gnvWWDBFloatingTitle'>Consultancy</p>
+          </div>
+        </div>
         
         <Spacer y={10}/>
         
