@@ -78,6 +78,7 @@
         border-radius: 15%;
         transition: 0.4s all ease-out;
         opacity: 0.4;
+        
     }
 
     h1 {
@@ -92,10 +93,10 @@
         padding-left: 50px;
         width: 100%;
         float: left;
-        background: -webkit-linear-gradient(left, rgb(255, 0, 72) , rgb(207, 14, 152));
-        background: -o-linear-gradient(right, red, rgb(207, 14, 152));
-        background: -moz-linear-gradient(right, red, rgb(207, 14, 152));
-        background: linear-gradient(to right, red , rgb(207, 14, 152)); 
+        background: -webkit-linear-gradient(left, #d25ba4 , rgb(207, 14, 152));
+        background: -o-linear-gradient(right, #d25ba4, rgb(207, 14, 152));
+        background: -moz-linear-gradient(right, #d25ba4, rgb(207, 14, 152));
+        background: linear-gradient(to right, #d25ba4 , rgb(207, 14, 152)); 
        -webkit-background-clip: text;
        -webkit-text-fill-color: transparent;
     }
@@ -203,7 +204,13 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 40px;
     // margin-bottom: 200px;
+
+    .gnvTitleBoxDesc {
+        margin-top: 100px;
+        padding-left: 50px;
+    }
 
     &::after {
         content: "";
@@ -252,8 +259,12 @@
     margin-left: calc(90% - 180px);
 }
 
+// .gnvPinkBG {
+//         background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ff14ef4a,#f50d0d4f, rgba(255, 255, 255, 0));
+// }
+
 .gnvPinkBG {
-        background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #ff14ef4a,#f50d0d4f, rgba(255, 255, 255, 0));
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0), #213,#213, rgba(255, 255, 255, 0));
 }
 
 .gnvOpenPos {
@@ -367,6 +378,26 @@
     &::after {
         content: "";
         clear: both;
+    }
+}
+
+.gnvPPWCarouselContainer {
+    background-color: white;
+    width: 70%;
+    margin-left: 15%;
+    height: 300px;
+    margin-top: 40px;
+}
+
+.gnvPPWMethodBox {
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 15%;
+
+    &:hover {
+        u {
+            color: pink;
+        }
     }
 }
 

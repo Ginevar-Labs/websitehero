@@ -5,6 +5,8 @@ import { Grid, Card, Text, Link, Spacer } from '@nextui-org/react';
 // import Navbar from './../components/Navbar'
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
+import LocalizationTexts from '../localization/texts.js'
+import CubeAnimations from '../components/CubeAnimations.js';
 
 const Navbar = dynamic(
   () => import('./../components/Navbar'),
@@ -42,11 +44,7 @@ export default function Home() {
           setOrigin(code)
         }}
       />
-      <div className='cubeAnimated'/>
-      <div className='cubeAnimated'/>
-      <div className='cubeAnimated'/>
-      <div className='cubeAnimated'/>
-      <div className='cubeAnimated'/>
+      <CubeAnimations/>
 
       <main>
         <div id='page-index' className='gnvIntro'>
@@ -60,7 +58,7 @@ export default function Home() {
         </div>
 
         <div id='what-we-do' className='gnvTitleContainer'>
-          <div className='gnvTitleBox'>
+          <div className='gnvTitleBoxRight'>
             <div className='gnvTBSquare'/>
             <h1>What we do</h1>
             <div className='gnvTBline'/>
@@ -94,7 +92,7 @@ export default function Home() {
           </div>
         </div>
         
-        <Spacer y={10}/>
+        {/* <Spacer y={10}/>
         
         <div id='software' className='gnvTitleContainer'>
           <div className='gnvTitleBoxRight'>
@@ -102,20 +100,29 @@ export default function Home() {
             <div className='gnvTBline'/>
             <h1>Software</h1>
           </div>
-        </div>
+        </div> */}
 
         <Spacer y={10}/>
 
-        <div id='projects-and-past-work' className='gnvTitleContainer'>
-          <div className='gnvTitleBox'>
-            <div className='gnvTBSquare'/>
-            <h1>Projects and Past Work</h1>
-            <div className='gnvTBline'/>
+        <div className='gnvPinkBG'>
+          <div id='projects-and-past-work' className='gnvTitleContainer'>
+            <div className='gnvTitleBox'>
+              <div className='gnvTBSquare'/>
+              <h1>Projects and Past Work</h1>
+              <div className='gnvTBline'/>
+            </div>
+            <p className='gnvTitleBoxDesc'>Our projects and past works</p>
           </div>
+
+          <div className='gnvPPWCarouselContainer'>
+
+          </div>
+
+          <div className='gnvPPWMethodBox'>
+            <a href='#'><p>Learn more about our <u>Working Method</u></p></a>
+          </div>
+
         </div>
-        
-        
-        <Spacer y={10}/>
         
         <div>
           <div id='careers' className='gnvTitleContainer'>
@@ -127,7 +134,7 @@ export default function Home() {
           </div>
           <p className='gnvDescBox' style={{
               marginBottom: '40px',
-              marginTop: '240px'
+              paddingTop: '200px'
             }}>
             If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume for consideration. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.
             </p>
@@ -156,7 +163,7 @@ export default function Home() {
           </div>
             <Spacer y={5}/>
             <p className='gnvDescBox gnvDescBoxRight' style={{
-              marginTop: '200px',
+              marginTop: '140px',
               marginBottom: '40px'
             }}>
             At Ginevar, we are dedicated to providing top-notch software development services to businesses of all sizes. Our team of experts is always available to answer any questions and help you with your software development needs. <br/> If you have any questions or would like to learn more about our services, please do not hesitate to contact us using the information below.
@@ -195,8 +202,8 @@ export default function Home() {
           </div>
           <div className='gnvFooterLinksColumn'>
           <div className='gnvFLCLeft'>
-            <a href='#'><h1>Software</h1></a>
-            <div style={{height: '30px'}}/>
+            {/* <a href='#'><h1>{LocalizationTexts.MENU_SOFTWARE[cookies.lang]}</h1></a> */}
+            {/* <div style={{height: '30px'}}/> */}
             <a href='#'><h1>Work</h1></a>
               <a href='#'><p>Working Method</p></a>
               <a href='#'><p>Portfolio</p></a>
@@ -210,7 +217,7 @@ export default function Home() {
         </div>
         <br/>
         <Spacer y={15}/>
-        <div style={{textAlign: 'center', width: '100%', marginBottom: '40px', marginTop: '40px'}}>
+        <div style={{textAlign: 'center', width: '100%',marginBottom: '40px', marginTop: '0px', opacity: '0.6'}}>
           <p>© Ginevar 2023</p>
         </div>
       </footer>

@@ -19,11 +19,11 @@ export default function Home({ origin, onGoLink }) {
         name: LocalizationTexts.MENU_WORK[cookies.lang],
         link: '#projects-and-past-work'
     },
-    {
-        code: 'software',
-        name: LocalizationTexts.MENU_SOFTWARE[cookies.lang],
-        link: '#software'
-    },
+    // {
+    //     code: 'software',
+    //     name: LocalizationTexts.MENU_SOFTWARE[cookies.lang],
+    //     link: '#software'
+    // },
     {
         code: 'index-careers',
         name: LocalizationTexts.MENU_CAREERS[cookies.lang],
