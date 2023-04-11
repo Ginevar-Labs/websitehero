@@ -41,7 +41,7 @@ export default {
     },
     "MENU_CONTACT": {
         "en": "Contact",
-        "it": "Contatto",
+        "it": "Contatti",
         "es": "Contacto"
     },
     "MENU_CAREERS": {

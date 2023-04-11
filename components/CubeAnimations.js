@@ -78,7 +78,7 @@ export default function CubeAnimations({  }) {
       }}/>
       <div className='cubeAnimated cubeAnimatedBeta' style={{
         left: '20vw',
-        top: '630vh',
+        top: '570vh',
         animationDelay: '1.1s'
       }}/>
     </>
