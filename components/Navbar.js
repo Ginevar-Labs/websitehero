@@ -44,8 +44,8 @@ export default function Home({ origin, onGoLink }) {
   return (
     <>
         <Head>
-            <title>Ginevar - Empowering businesses with technology</title>
-            <meta name="description" content="Ginevar - Empowering businesses with technology" />
+            <title>{LocalizationTexts.META_TITLE[cookies.lang]}</title>
+            <meta name="description" content={LocalizationTexts.META_DESCRIPTION[cookies.lang]}/>
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
