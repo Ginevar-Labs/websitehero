@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { Grid, Card, Text, Link, Spacer, Modal, Button } from '@nextui-org/react';
+import { Badge, Spacer, Modal, Button } from '@nextui-org/react';
 // import Navbar from './../components/Navbar'
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
@@ -59,6 +59,19 @@ export default function Home() {
     alert(LocalizationTexts.MENU_LANGUAGE_CHANGED[cookies.lang])
 }
 
+const getBadge = (categoryId) => {
+  switch(categoryId) {
+    case 1: return <Badge color="secondary">{LocalizationTexts.WWD_MOTION_GRAPHICS[cookies.lang]}</Badge>
+    case 2: return <Badge color="success">{LocalizationTexts.WWD_UX_UI[cookies.lang]}</Badge>
+    case 3: return <Badge color="primary">{LocalizationTexts.WWD_BACKEND[cookies.lang]}</Badge>
+    case 4: return <Badge color="warning">{LocalizationTexts.WWD_MOBILE_APPS[cookies.lang]}</Badge>
+    case 5: return <Badge color="secondary">{LocalizationTexts.WWD_SMART_CONTRACTS[cookies.lang]}</Badge>
+    case 6: return <Badge color="success">{LocalizationTexts.WWD_GAMES[cookies.lang]}</Badge>
+    case 7: return <Badge color="warning">{LocalizationTexts.WWD_CONSULTANCY[cookies.lang]}</Badge>
+    default: return <Badge color="primary">{LocalizationTexts.WWD_WEBSITES[cookies.lang]}</Badge>
+  }
+
+}
 
   return (
     <div>
@@ -227,9 +240,18 @@ export default function Home() {
         open={isProjectPopupVisible}
         onClose={() => setIsProjectPopupVisible(false)}>
           <Modal.Header>
-            <h4>{popupProject?.title ?? ''}</h4>
+
+          <div style={{textAlign: 'left'}}>
+          <h4 style={{width: '100%', textAlign: 'center'}}>{popupProject?.title[cookies.lang] ?? ''}</h4>
+          
+          <p style={{width: '100%'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
+          <p><b>Link:</b> <a href={popupProject?.link}>{popupProject?.link}</a></p>
+          {getBadge(popupProject?.category)}
+          </div>
+           
           </Modal.Header>
           <Modal.Body>
+            
           <AliceCarousel
                   autoPlay
                   infinite={true}

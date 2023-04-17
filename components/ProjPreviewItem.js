@@ -14,7 +14,7 @@ export default function ProjPreviewItem({ onClick, data }) {
         <div onClick={() => {
           onClick();
         }} className='projPrevItem'>
-          <h1 className='pPIvistitle'>{data.title}</h1>
+          <h1 className='pPIvistitle'>{data.title[cookies.lang]}</h1>
           <p className='pPIvisdesc'>{data.short[cookies.lang]}</p>
           <div className='pPIhidden'>
             <br/>

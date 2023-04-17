@@ -1,6 +1,10 @@
 [
     {
-        "title": "Birra Korka",
+        "title": {
+            "it": "Birra Korka",
+            "en": "Korka Beer",
+            "es": "Cerveza Korka"
+        },
         "category": 0,
         "short":  {
             "it": "Sito Web creato per storica azienda produttrice di birra Albanese.",
@@ -15,6 +19,28 @@
         "link": "https://birrakorca.com.al/en/",
         "assets": [
             "korca1.png", "korca2.png"
+        ]
+    },
+    {
+        "title": {
+            "it": "Arredamento Chilton",
+            "en": "Chilton Furnitures",
+            "es": "Muebles Chilton"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Sito Web strutturato per Chilton",
+            "en": "Website created for Chilton",
+            "es": "Sitio web estructurado para Chilton,"
+        },
+        "description": {
+            "it": ", azienda statunitense a stampo familiare che dal 1885, si occupa della produzione di mobili di design in legno. Il sito è completo di catalogo dei prodotti disponibili e uno shop nel quale fare comodamente acquisti.",
+            "en": ", a family-run US company that has been involved in the production of wooden design furniture since 1885.  The site is complete with a catalog of available products and a shop where you can easily shop them. ",
+            "es": ", una empresa familiar estadounidense que se dedica a la producción de muebles de design en madera desde 1885. El sitio se completa con un catálogo de productos disponibles y una tienda donde puede comprar fácilmente."
+        },
+        "link": "https://www.chiltons.com/",
+        "assets": [
+            "chilton1.png", "chilton2.png"
         ]
     }
 ]
