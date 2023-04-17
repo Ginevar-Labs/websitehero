@@ -160,9 +160,9 @@ export default {
         "es": "En Ginevar, nos dedicamos a brindar servicios de desarrollo de software de primer nivel a particulares y empresas de todos los tamaños. Nuestro equipo de expertos está siempre disponible para responder cualquier pregunta y ayudarlo con sus necesidades lo antes posible."
     },
     "CONTACT_HERO_B": {
-        "en": "If you have any questions or would like to learn more about our services, please do not hesitate to contact us:",
-        "it": "Se hai delle domande o desideri di saperne di più sui nostri servizi, non esitare a contattarci:",
-        "es": "Si ha alguna pregunta o quiere saber mas sobre nuestros servicios, por favor no dude en contactarnos:"
+        "en": "If you have any questions or would like to learn more about our services, please do not hesitate to contact us at contact@ginevar.com:",
+        "it": "Se hai delle domande o desideri di saperne di più sui nostri servizi, non esitare a contattarci a contact@ginevar.com:",
+        "es": "Si ha alguna pregunta o quiere saber mas sobre nuestros servicios, por favor no dude en contactarnos a contact@ginevar.com:"
     },
     "CAREERS_APPLY": {
         "en": "Apply",
@@ -180,9 +180,9 @@ export default {
         "es": "No hay posiciones abiertas al momento"
     },
     "CAREERS_ENCOURAGE_APPLY_TEXT": {
-        "en": "Whether you have experience in software development, design, marketing or sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment.",
-        "it": "Se hai sperienza in sviluppo software, design, marketing o Sales, o se stai cercando di cambiare aria ed iniziare in un nuovo campo, ti invitiamo a candidarti. Siamo in costante crescita ed espandiendo il nostro business, e di conseguenza prendiamo in considerazione tutti i candidati anche se al momento non ci siano posizioni aperte.",
-        "es": "Si tienes experiencia en desarrollo de software, diseño, marketing o ventas, o si quieres empezar una nueva etapa y cambiar de campo, te aconsejamos de aplicar. Estamos constantemente en crecimiento y expandiendo nuestros negocios, y de resultado tomamos en consideraciones todas las aplicaciones aunque no haya ninguna posicion abierta al momento."
+        "en": "Whether you have experience in software development, design, marketing or sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment. Send your CV to careers@ginevar.com.",
+        "it": "Se hai sperienza in sviluppo software, design, marketing o Sales, o se stai cercando di cambiare aria ed iniziare in un nuovo campo, ti invitiamo a candidarti. Siamo in costante crescita ed espandiendo il nostro business, e di conseguenza prendiamo in considerazione tutti i candidati anche se al momento non ci siano posizioni aperte. Invia il tuo CV a careers@ginevar.com",
+        "es": "Si tienes experiencia en desarrollo de software, diseño, marketing o ventas, o si quieres empezar una nueva etapa y cambiar de campo, te aconsejamos de aplicar. Estamos constantemente en crecimiento y expandiendo nuestros negocios, y de resultado tomamos en consideraciones todas las aplicaciones aunque no haya ninguna posicion abierta al momento. Envia tu CV a careers@ginevar.com"
     },
     "CAREERS_INTRO_TEXT": {
         "en": "If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.",
