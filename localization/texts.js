@@ -201,7 +201,7 @@ export default {
     },
     "PROJECTS_SEE_ALL": {
         "en": "See all",
-        "it": "Aprire tutti i progetti",
+        "it": "Vedere tutti",
         "es": "Ver todos"
     },
 }
