@@ -382,11 +382,25 @@
 }
 
 .gnvPPWCarouselContainer {
-    background-color: white;
     width: 70%;
     margin-left: 15%;
     height: 300px;
     margin-top: 40px;
+    position: relative;
+
+    .gnvPPWCarouselLink {
+        position: absolute;
+        bottom: 0;
+        font-weight: 500;
+        left: calc(90% - 60px);
+        width: 120px;
+        text-align: right;
+        transition: 0.2s all ease-out;
+
+        &:hover {
+            color: #9E6FB6;
+        }
+    }
 }
 
 .gnvPPWMethodBox {

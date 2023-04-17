@@ -3,6 +3,7 @@ import '../styles/navbar.scss'
 import '../styles/globals.scss'
 import '../styles/intro.scss'
 import '../styles/footer.scss'
+import 'react-alice-carousel/lib/alice-carousel.css';
 import { createTheme, NextUIProvider } from "@nextui-org/react"
 import { CookiesProvider } from 'react-cookie';
 

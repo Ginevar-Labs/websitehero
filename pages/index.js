@@ -7,6 +7,13 @@ import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
 import CubeAnimations from '../components/CubeAnimations.js';
+import ProjPreviewItem from '../components/ProjPreviewItem.js';
+import AliceCarousel from 'react-alice-carousel';
+
+const Footer = dynamic(
+  () => import('./../components/Footer'),
+  { ssr: false }
+)
 
 const Navbar = dynamic(
   () => import('./../components/Navbar'),
@@ -16,6 +23,12 @@ const Navbar = dynamic(
 export default function Home() {
   const [cookies, setCookie] = useCookies(['lang']);
   const [origin, setOrigin] = useState('');
+
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+};
 
   useEffect(() => {
     loadInitialData();
@@ -120,7 +133,22 @@ export default function Home() {
           </div>
 
           <div className='gnvPPWCarouselContainer'>
-
+          <AliceCarousel
+                  autoPlay
+                  infinite={true}
+                  autoPlayDirection={'ltr'}
+                  animationDuration={2500}
+                  disableButtonsControls={true}
+                  disableDotsControls={true}
+                  // mouseTracking
+                  responsive={responsive}
+                  items={[
+                    <ProjPreviewItem />,
+                    <ProjPreviewItem />,
+                      <ProjPreviewItem />
+                  ]}
+              />
+          <a href='#' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
           </div>
 
           <div className='gnvPPWMethodBox'>
@@ -183,56 +211,7 @@ export default function Home() {
 
       </main>
 
-      <footer>
-        <div className='gnvFooterContainer'>
-          <div className='gnvFooterBanner'>
-            <img src='/assets/squared_logo.png'/>
-            <p><b>Ginevar</b></p>
-            <p>{LocalizationTexts.LOCATION[cookies.lang]}</p>
-            {/* <p>ID</p> */}
-          </div>
-          <div className='gnvFooterLinksColumn'>
-            <div className='gnvFLCLeft'>
-              <a href='#'><h1>{LocalizationTexts.MENU_WHATWEDO[cookies.lang]}</h1></a>
-              <a href='#'><p>{LocalizationTexts.WWD_WEBSITES[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_MOTION_GRAPHICS[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_UX_UI[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_BACKEND[cookies.lang]}</p></a>
-            </div>
-            <div className='gnvFLCRight'>
-              <div style={{height: '30px'}}/>
-              <a href='#'><p>{LocalizationTexts.WWD_MOBILE_APPS[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_SMART_CONTRACTS[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_GAMES[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.WWD_CONSULTANCY[cookies.lang]}</p></a>
-            </div>
-          </div>
-          <div className='gnvFooterLinksColumn'>
-          <div className='gnvFLCLeft'>
-            {/* <a href='#'><h1>{LocalizationTexts.MENU_SOFTWARE[cookies.lang]}</h1></a> */}
-            {/* <div style={{height: '30px'}}/> */}
-            <a href='#'><h1>{LocalizationTexts.MENU_WORK[cookies.lang]}</h1></a>
-              <a href='#'><p>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</p></a>
-              <a href='#'><p>{LocalizationTexts.FOOTER_WORK_PORTFOLIO[cookies.lang]}</p></a>
-            <div style={{height: '30px'}}/>
-              <a href='#'><h1>{LocalizationTexts.MENU_CAREERS[cookies.lang]}</h1></a>
-          </div>
-          <div className='gnvFLCRight'>
-          
-            <a href='#'><h1>{LocalizationTexts.MENU_CONTACT[cookies.lang]}</h1></a>
-            <div style={{height: '30px'}}/>
-            <a onClick={() => changeLanguage('en')}><p>{LocalizationTexts.MENU_LANG_ENGLISH[cookies.lang]}</p></a>
-            <a onClick={() => changeLanguage('es')}><p>{LocalizationTexts.MENU_LANG_SPANISH[cookies.lang]}</p></a>
-            <a onClick={() => changeLanguage('it')}><p>{LocalizationTexts.MENU_LANG_ITALIAN[cookies.lang]}</p></a>
-          </div>
-          </div>
-        </div>
-        <br/>
-        <Spacer y={15}/>
-        <div style={{textAlign: 'center', width: '100%',marginBottom: '40px', marginTop: '0px', opacity: '0.6'}}>
-          <p>© Ginevar 2023</p>
-        </div>
-      </footer>
+      <Footer/>
     </div>
   )
 }

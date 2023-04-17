@@ -1,3 +1,5 @@
+@import "react-alice-carousel/lib/scss/alice-carousel.scss";
+
 html {
   scroll-behavior: smooth;
 }
@@ -76,3 +78,70 @@ body{
       opacity: 0;
     }
   }
+
+.projPrevItemContainer {
+  height: 300px;
+  aspect-ratio: 1.0;
+  padding-top: 2.5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: transparent;
+  // overflow: hidden;
+
+
+  .projPrevItem {
+    height: 90%;
+    aspect-ratio: 1.0;
+    position: relative;
+    background-color: rgba(30, 29, 29, 0.635);
+    font-family: 'Open Sans';
+    padding: 10px 20px;
+    overflow: hidden;
+
+    .pPIvistitle {
+      font-size: 26px;
+    }
+
+    .pPIvisdesc {
+      font-size: 18px;
+      opacity: 0.4;
+    }
+
+    .pPIhidden {
+      opacity: 0;
+      transition: 0.8s all ease-out;
+
+      p {
+        margin: 20px 0px;
+      }
+    }
+
+    .pPIimage {
+      position: absolute;
+      width: 50%;
+      bottom: -20%;
+      right: 0px;
+      transition: 0.5s all ease-out;
+      transform: rotate(-30deg);
+    }
+
+    &:hover {
+      overflow: visible;
+      .pPIimage {
+        transform: rotate(0deg);
+        right: -20%;
+        bottom: 0%;
+        opacity: 0.4;
+      }
+
+      .pPIvisdesc {
+        opacity: 0.8;
+      }
+
+      .pPIhidden {
+        opacity: 1;
+      }
+    }
+  }
+}
+

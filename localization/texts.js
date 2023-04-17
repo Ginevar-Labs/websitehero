@@ -199,4 +199,9 @@ export default {
         "it": "Qui puoi leggere di più su alcuni dei progetti in cui abbiamo lavorato:",
         "es": "Aqui puedes leer mas sobre algunos de los proyectos en los que trabajamos:"
     },
+    "PROJECTS_SEE_ALL": {
+        "en": "See all",
+        "it": "Aprire tutti i progetti",
+        "es": "Ver todos"
+    },
 }
