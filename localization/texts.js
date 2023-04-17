@@ -32,7 +32,7 @@ export default {
     "GNV_INTRO_WITH_A_TEAM": {
         "en": "With a team of highly skilled developers Ginevar is capable of bringing any software development project to life. We offer a range of services including custom software development, website design, mobile app development, and more. Our experts work closely with clients to ensure that their projects exceed expectations. We are passionate about using technology to drive progress and create growth opportunities for their clients. Contact us to learn more about our services.",
         "it": "Con un team di sviluppatori altamente qualificato Ginevar è in grado di dare vita ad ogni tipo di progetto di sviluppo software. Offriamo una vasta gamma di servizi tra cui la progettazione di siti web, lo sviluppo di app mobile e molto di più. I nostri esperti lavorano a stretto contatto con i clienti per garantire che i risultati siano costantemente in linea con le aspettative e offrano nuove opportunità di crescita per il loro business. Contattaci per sapere di più sui nostri servizi.",
-        "es": "Con un equipo de desarrolladores altamente calificados Ginevar puede dar vida a cualquier proyecto de desarrollo de software. Ofrecemos una gama de servicios que van desde desarrollo de software personalizado, diseño de sitios web, desarrollo de aplicaciones moviles, y mucho mas. Nuestros expertos trabajan en estrecha colaboracion con los clientes para garantzar que sus proyectos usperen las expectativas. Nos apasiona utilizar la tecnologia mas innovadora y crear una oportunidad de crecimiento para nuestros clientes. Contactanos para saber mas osbre nuestros servicios."
+        "es": "Con un equipo de desarrolladores altamente calificados Ginevar puede dar vida a cualquier proyecto de desarrollo de software. Ofrecemos una gama de servicios que van desde desarrollo de software personalizado, diseño de sitios web, desarrollo de aplicaciones moviles, y mucho mas. Nuestros expertos trabajan en estrecha colaboracion con los clientes para garantzar que sus proyectos superen las expectativas. Nos apasiona utilizar la tecnologia mas innovadora y crear una oportunidad de crecimiento para nuestros clientes. Contactanos para saber mas osbre nuestros servicios."
     },
     "MENU_SETTINGS": {
         "en": "Settings",
@@ -201,7 +201,7 @@ export default {
     },
     "PROJECTS_SEE_ALL": {
         "en": "See all",
-        "it": "Vedere tutti",
+        "it": "Mostra tutti",
         "es": "Ver todos"
     },
 }
