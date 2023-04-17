@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
 
-export default function ProjPreviewItem({  }) {
+export default function ProjPreviewItem() {
     const [cookies, setCookie] = useCookies(['lang']);
 
   return (

@@ -143,9 +143,9 @@ export default function Home() {
                   // mouseTracking
                   responsive={responsive}
                   items={[
-                    <ProjPreviewItem />,
-                    <ProjPreviewItem />,
-                      <ProjPreviewItem />
+                    <ProjPreviewItem key={0} />,
+                    <ProjPreviewItem key={1} />,
+                      <ProjPreviewItem key={2} />
                   ]}
               />
           <a href='#' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
