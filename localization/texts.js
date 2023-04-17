@@ -182,7 +182,7 @@ export default {
     "CAREERS_ENCOURAGE_APPLY_TEXT": {
         "en": "Whether you have experience in software development, design, marketing or sales, or you are looking to break into a new field, we encourage you to apply. We are constantly growing and expanding our business, and as a result, we take in consideration all applicants even if there are no specific open positions at the moment. Send your CV to careers@ginevar.com.",
         "it": "Se hai esperienza nei campi dello sviluppo software, design, marketing o sales, ti invitiamo a candidarti. Il nostro business è in costante crescita di conseguenza prendiamo in considerazione tutti i candidati anche se al momento non ci sono posizioni aperte. Invia il tuo CV a careers@ginevar.com",
-        "es": "Si tienes experiencia en desarrollo de software, diseño, marketing o ventas, o si quieres empezar una nueva etapa y cambiar de campo, te aconsejamos de aplicar. Estamos constantemente en crecimiento y expandiendo nuestros negocios, y de resultado tomamos en consideraciones todas las aplicaciones aunque no haya ninguna posicion abierta al momento. Envia tu CV a careers@ginevar.com"
+        "es": "Si tienes experiencia en desarrollo de software, diseño, marketing o ventas, o si quieres empezar una nueva etapa y cambiar de campo, te aconsejamos aplicar. Estamos constantemente en crecimiento y expandiendo nuestros negocios, y de resultado tomamos en consideraciones todas las aplicaciones aunque no haya ninguna posicion abierta al momento. Envia tu CV a careers@ginevar.com"
     },
     "CAREERS_INTRO_TEXT": {
         "en": "If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.",
@@ -203,5 +203,10 @@ export default {
         "en": "See all",
         "it": "Mostra tutti",
         "es": "Ver todos"
+    },
+    "MODAL_CLOSE": {
+        "en": "Close",
+        "it": "Chiudi",
+        "es": "Cerrar"
     },
 }

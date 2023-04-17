@@ -413,7 +413,14 @@
     }
 }
 
+.popupImageContainer {
+    padding-right: 200px;
+}
+
 @media screen and (max-width: 840px) {
+    .popupImageContainer {
+        padding-right: 0px;
+    }
     .gnvIntro {
         .gnvIntro-left, .gnvIntro-right {
             text-align: center;

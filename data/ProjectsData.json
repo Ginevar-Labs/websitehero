@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Birra Korka",
+        "category": 0,
+        "short":  {
+            "it": "Sito Web creato per storica azienda produttrice di birra Albanese.",
+            "en": "Website created for a historic Albanian beer producer.",
+            "es": "Sitio web creado para un histórico productor de cerveza albanés."
+        },
+        "description": {
+            "it": "Nel sito è disponibile il catalogo delle bevande prodotte e disponibili alla vendita, inoltre nella sezione shop è possibile finalizzare il proprio acquisto.",
+            "en": "We created for them an e-commerce with catalog of drinks and beverages produced available on the site and the possibility to finalize a purchase in the shop section.",
+            "es": "El sitio tiene un catálogo de bebidas producidas y disponibles para la venta, y también es posible finalizar su compra en la sección de la tienda online."
+        },
+        "link": "https://birrakorca.com.al/en/",
+        "assets": [
+            "korca1.png", "korca2.png"
+        ]
+    }
+]

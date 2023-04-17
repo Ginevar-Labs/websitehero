@@ -6,19 +6,21 @@ import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
 
-export default function ProjPreviewItem() {
+export default function ProjPreviewItem({ onClick, data }) {
     const [cookies, setCookie] = useCookies(['lang']);
 
   return (
     <div className='projPrevItemContainer'>
-        <div className='projPrevItem'>
-          <h1 className='pPIvistitle'>ICAO for Pilots</h1>
-          <p className='pPIvisdesc'>English-learning application for pilots, developed under IATA standards.</p>
+        <div onClick={() => {
+          onClick();
+        }} className='projPrevItem'>
+          <h1 className='pPIvistitle'>{data.title}</h1>
+          <p className='pPIvisdesc'>{data.short[cookies.lang]}</p>
           <div className='pPIhidden'>
-            <p>Here it goes more text.</p>
-            <p>Click here to find out more</p>
+            <br/>
+            {/* {data.description[cookies.lang]} */}
           </div>
-          <img className='pPIimage' src='/assets/testScreenshot.png'/>
+          <img className='pPIimage' src={'/assets/projectsData/'+data.assets[0]}/>
         </div>
     </div>
   )

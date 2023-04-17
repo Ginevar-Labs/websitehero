@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { Grid, Card, Text, Link, Spacer } from '@nextui-org/react';
+import { Grid, Card, Text, Link, Spacer, Modal, Button } from '@nextui-org/react';
 // import Navbar from './../components/Navbar'
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
@@ -9,6 +9,8 @@ import LocalizationTexts from '../localization/texts.js'
 import CubeAnimations from '../components/CubeAnimations.js';
 import ProjPreviewItem from '../components/ProjPreviewItem.js';
 import AliceCarousel from 'react-alice-carousel';
+
+import ProjectData from '../data/ProjectsData.json'
 
 const Footer = dynamic(
   () => import('./../components/Footer'),
@@ -23,6 +25,9 @@ const Navbar = dynamic(
 export default function Home() {
   const [cookies, setCookie] = useCookies(['lang']);
   const [origin, setOrigin] = useState('');
+
+  const [isProjectPopupVisible, setIsProjectPopupVisible] = useState(false)
+  const [popupProject, setPopupProject] = useState(null)
 
   const responsive = {
     0: { items: 1 },
@@ -53,6 +58,7 @@ export default function Home() {
     setCookie('lang', langcode, { path: '/' });
     alert(LocalizationTexts.MENU_LANGUAGE_CHANGED[cookies.lang])
 }
+
 
   return (
     <div>
@@ -142,11 +148,14 @@ export default function Home() {
                   disableDotsControls={true}
                   // mouseTracking
                   responsive={responsive}
-                  items={[
-                    <ProjPreviewItem key={0} />,
-                    <ProjPreviewItem key={1} />,
-                      <ProjPreviewItem key={2} />
-                  ]}
+                  items={
+                    ProjectData.map((item, index) => {
+                      return <ProjPreviewItem onClick={() => {
+                        setIsProjectPopupVisible(true)
+                        setPopupProject(item);
+                      }} data={item} key={index} />
+                    })
+                  }
               />
           <a href='#' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
           </div>
@@ -212,6 +221,43 @@ export default function Home() {
       </main>
 
       <Footer/>
+      <Modal closeButton
+        aria-labelledby="modal-title"
+        width='90%'
+        open={isProjectPopupVisible}
+        onClose={() => setIsProjectPopupVisible(false)}>
+          <Modal.Header>
+            <h4>{popupProject?.title ?? ''}</h4>
+          </Modal.Header>
+          <Modal.Body>
+          <AliceCarousel
+                  autoPlay
+                  infinite={true}
+                  autoPlayDirection={'ltr'}
+                  animationDuration={2500}
+                  disableButtonsControls={true}
+                  disableDotsControls={true}
+                  // mouseTracking
+                  responsive={{
+                    0: { items: 1 },
+                    568: { items: 1 },
+                    1024: { items: 2 },
+                }}
+                  items={
+                    popupProject?.assets.map((item, index) => {
+                      return <div className='popupImageContainer'>
+                        <a href={`/assets/projectsData/${item}`} target='_blank'><img src={`/assets/projectsData/${item}`} alt={`${popupProject?.title} ${index}`} key={index}/></a>
+                      </div>
+                    })
+                  }
+              />
+          </Modal.Body>
+          <Modal.Footer>
+          <Button auto flat color="error" onPress={() => setIsProjectPopupVisible(false)}>
+          {LocalizationTexts.MODAL_CLOSE[cookies.lang]}
+          </Button>
+        </Modal.Footer>
+      </Modal>
     </div>
   )
 }
