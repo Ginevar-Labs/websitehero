@@ -42,5 +42,27 @@
         "assets": [
             "chilton1.png", "chilton2.png"
         ]
+    },
+    {
+        "title": {
+            "it": "Arredamento Sezondekor",
+            "en": "Sezondekor Furnitures",
+            "es": "Muebles Sezondekor"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Sito Web svluppato per Sezondekor, azienda albanese leader nella vendita dell’arredamento",
+            "en": "Website developed for Sezondekor, an Albanian company leader in the field of furnitures",
+            "es": "Sitio web desarrollado para Sezondekor, una empresa albanesa líder en la venta de muebles"
+        },
+        "description": {
+            "it": ", il sito è stato ripensato e ricreato per venire in contro alle esigenze dei proprietari, è stato rielaborata la struttura e il design della pagina, aggiungendo la sezione dedicata allo shop online internazionale.",
+            "en": ", the site has been redesigned and recreated to meet the needs of the owners, the structure and design of the page has been reworked, including the section dedicated to the international online shopping.",
+            "es": ", el sitio ha sido rediseñado y recreado para satisfacer las necesidades de los propietarios, la estructura y el diseño de la página se han reelaborado, agregando la sección dedicada a las ventas internacionales."
+        },
+        "link": "https://sezondekor.al/sq/#",
+        "assets": [
+            "sezondekor1.png", "sezondekor2.png"
+        ]
     }
 ]

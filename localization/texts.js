@@ -50,9 +50,9 @@ export default {
         "es": "Trabaja con nosotros"
     },
     "MENU_WORK": {
-        "en": "Projects",
-        "it": "Progetti",
-        "es": "Proyectos"
+        "en": "Portfolio",
+        "it": "Portfolio",
+        "es": "Portfolio"
     },
     "MENU_SOFTWARE": {
         "en": "Software",
