@@ -46,6 +46,7 @@ export default function Home({ origin, onGoLink }) {
         <Head>
             <title>{LocalizationTexts.META_TITLE[cookies.lang]}</title>
             <meta name="description" content={LocalizationTexts.META_DESCRIPTION[cookies.lang]}/>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
