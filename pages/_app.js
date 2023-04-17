@@ -1,3 +1,4 @@
+import '../styles/fonts.css'
 import '../styles/globals.css'
 import '../styles/navbar.scss'
 import '../styles/globals.scss'
