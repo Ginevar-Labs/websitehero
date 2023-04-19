@@ -311,15 +311,17 @@
 .gnvWWDBoxContainer {
     width: 70%;
     margin-left: 15%;
+    margin-right: 15%;
     position: relative;
-    padding-bottom: 350px;
+    display: block;
+    height: 35vw;
 
     .gnvWWDBox {
         background-color: #1e1d1d4d;
         outline: 1px solid #ffffff16;
         
-        width: 25%;
-        aspect-ratio: 1.0;
+        width: 17.5vw;
+        height: 17.5vw;
         position: relative;
         float: left;
         transition: 0.5s all ease-out;
@@ -470,10 +472,11 @@
     }
 
     .gnvWWDBoxContainer {
-        padding-bottom: 550px;
+        height: 140vw;
 
         .gnvWWDBox {
-            width: 50%;
+            width: 35vw;
+            height: 35vw;
         }
     }
     

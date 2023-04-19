@@ -61,7 +61,8 @@ export default function Footer({  }) {
     </div>
     <br/>
     <Spacer y={15}/>
-    <div style={{textAlign: 'center', width: '100%',marginBottom: '40px', marginTop: '0px', opacity: '0.6'}}>
+    <br/>
+    <div style={{textAlign: 'center',float:'left', width: '100%',marginBottom: '40px', marginTop: '0px', opacity: '0.6'}}>
       <p>© Ginevar 2023</p>
     </div>
   </footer>

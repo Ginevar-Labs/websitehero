@@ -1,13 +1,15 @@
 
 .navbar-custom {
     padding-top: 30px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 5%;
+    padding-left: 7.5%;
     box-shadow: none;
+    justify-content: center;
 }
 
 .nextui-navbar-container {
     background-color: #171616 !important;
+    max-width: 100%;
 }
 
 .navbar-custom-toggle {
@@ -19,6 +21,10 @@
     &:hover {
         color: #ff18f099;
     }
+}
+
+.navbar-content-custom {
+    margin-left: 0px;
 }
 
 @media screen and (max-width: 840px) {

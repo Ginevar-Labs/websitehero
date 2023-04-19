@@ -67,6 +67,7 @@ export default function Home({ origin, onGoLink }) {
                     activeColor="secondary" 
                     hideIn="sm" 
                     variant="highlight-rounded"
+                    className='navbar-content-custom'
                 >
                     {collapseItems.map((item, index) => (
                         <Navbar.Link className='navbarItemsLinks' onClick={() => {

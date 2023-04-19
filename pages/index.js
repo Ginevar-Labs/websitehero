@@ -128,9 +128,8 @@ const getBadge = (categoryId) => {
             <p className='gnvWWDBFloatingTitle'>{LocalizationTexts.WWD_CONSULTANCY[cookies.lang]}</p>
           </div>
         </div>
-        
-        {/* <Spacer y={10}/>
-        
+        {/* <Spacer y={10}/> */}
+        {/* 
         <div id='software' className='gnvTitleContainer'>
           <div className='gnvTitleBoxRight'>
             <div className='gnvTBSquare'/>
@@ -139,7 +138,7 @@ const getBadge = (categoryId) => {
           </div>
         </div> */}
 
-        <Spacer y={10}/>
+        {/* <Spacer y={10}/> */}
 
         <div className='gnvPinkBG'>
           <div id='projects-and-past-work' className='gnvTitleContainer'>
@@ -189,7 +188,8 @@ const getBadge = (categoryId) => {
           </div>
           <p className='gnvDescBox' style={{
               marginBottom: '40px',
-              paddingTop: '200px'
+              paddingTop: '200px',
+              marginTop: '100px'
             }}>
             {LocalizationTexts.CAREERS_INTRO_TEXT[cookies.lang]}
             </p>
