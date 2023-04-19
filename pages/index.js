@@ -35,9 +35,6 @@ export default function Home() {
     1024: { items: 3 },
 };
 
-  useEffect(() => {
-    loadInitialData();
-  }, []);
 
   const loadInitialData = async() => {
     if(!cookies.lang) {
@@ -53,6 +50,9 @@ export default function Home() {
       }
     }
   }
+  useEffect(() => {
+    loadInitialData();
+  }, []);
 
   const changeLanguage = (langcode) => {
     setCookie('lang', langcode, { path: '/' });
@@ -245,7 +245,7 @@ const getBadge = (categoryId) => {
           <h4 style={{width: '100%', textAlign: 'center'}}>{popupProject?.title[cookies.lang] ?? ''}</h4>
           
           <p style={{width: '100%'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
-          <p><b>Link:</b> <a href={popupProject?.link}>{popupProject?.link}</a></p>
+          <p><b>Link:</b> <a href={popupProject?.link} target='_blank'>{popupProject?.link}</a></p>
           {getBadge(popupProject?.category)}
           </div>
            
@@ -267,7 +267,7 @@ const getBadge = (categoryId) => {
                 }}
                   items={
                     popupProject?.assets.map((item, index) => {
-                      return <div className='popupImageContainer'>
+                      return <div key={index} className='popupImageContainer'>
                         <a href={`/assets/projectsData/${item}`} target='_blank'><img src={`/assets/projectsData/${item}`} alt={`${popupProject?.title} ${index}`} key={index}/></a>
                       </div>
                     })
