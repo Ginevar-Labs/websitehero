@@ -81,6 +81,95 @@ body{
     }
   }
 
+  .bigProjPrevItemContainer {
+    height: 300px;
+    width: 100%;
+    padding-top: 2.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: transparent;
+
+
+  .bigProjPrevItem {
+    height: 90%;
+    width: 100%;
+    position: relative;
+    background-color: rgba(30, 29, 29, 0.635);
+    font-family: 'Open Sans';
+    padding: 10px 20px;
+    overflow: hidden;
+
+    .pPIvistitle {
+      font-size: 26px;
+    }
+
+    .pPIvisdesc {
+      font-size: 18px;
+      opacity: 0.4;
+      max-width: 60%;
+    }
+
+    .pPIhidden {
+      transition: 0.8s all ease-out;
+
+      p {
+        margin: 20px 0px;
+      }
+    }
+
+    .pPIimage {
+      position: absolute;
+      width: 200px;
+      top: 5%;
+      right: 0px;
+      transition: 0.5s all ease-out;
+      transform: rotate(-30deg);
+      opacity: 0.2;
+      z-index: 9999;
+    }
+
+    &:hover {
+      overflow: visible;
+      --border-size: 3px;
+      --border-angle: 0turn;
+      background-image: conic-gradient(
+          from var(--border-angle),
+          #213,
+          #112 50%,
+          #213
+          ),
+          conic-gradient(from var(--border-angle), transparent 20%, rgb(255, 0, 221), #f03);
+      background-size: calc(100% - (var(--border-size) * 2))
+          calc(100% - (var(--border-size) * 2)),
+          cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      animation: bg-spin 3s linear infinite;
+      @keyframes bg-spin {
+          to {
+          --border-angle: 1turn;
+          }
+      }
+
+      .pPIimage {
+        transform: rotate(0deg);
+        // right: 25%;
+        // bottom: 0%;
+        opacity: 0.7;
+      }
+
+      .pPIvisdesc {
+        opacity: 0.8;
+      }
+
+      .pPIhidden {
+        opacity: 1;
+      }
+    }
+  }
+  }
+
 .projPrevItemContainer {
   height: 300px;
   aspect-ratio: 1.0;

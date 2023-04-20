@@ -11,6 +11,7 @@ import ProjPreviewItem from '../components/ProjPreviewItem.js';
 import AliceCarousel from 'react-alice-carousel';
 
 import ProjectData from '../data/ProjectsData.json'
+import ProjectPopup from '../components/ProjectPopup.js';
 
 const Footer = dynamic(
   () => import('./../components/Footer'),
@@ -169,7 +170,7 @@ const getBadge = (categoryId) => {
                     })
                   }
               />
-          <a href='#' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
+          <a href='/portfolio' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
           </div>
 
           <div className='gnvPPWMethodBox'>
@@ -234,52 +235,11 @@ const getBadge = (categoryId) => {
       </main>
 
       <Footer/>
-      <Modal closeButton
-        aria-labelledby="modal-title"
-        width='90%'
-        open={isProjectPopupVisible}
-        onClose={() => setIsProjectPopupVisible(false)}>
-          <Modal.Header>
-
-          <div style={{textAlign: 'left'}}>
-          <h4 style={{width: '100%', textAlign: 'center'}}>{popupProject?.title[cookies.lang] ?? ''}</h4>
-          
-          <p style={{width: '100%'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
-          <p><b>Link:</b> <a href={popupProject?.link} target='_blank'>{popupProject?.link}</a></p>
-          {getBadge(popupProject?.category)}
-          </div>
-           
-          </Modal.Header>
-          <Modal.Body>
-            
-          <AliceCarousel
-                  autoPlay
-                  infinite={true}
-                  autoPlayDirection={'ltr'}
-                  animationDuration={2500}
-                  disableButtonsControls={true}
-                  disableDotsControls={true}
-                  // mouseTracking
-                  responsive={{
-                    0: { items: 1 },
-                    568: { items: 1 },
-                    1024: { items: 2 },
-                }}
-                  items={
-                    popupProject?.assets.map((item, index) => {
-                      return <div key={index} className='popupImageContainer'>
-                        <a href={`/assets/projectsData/${item}`} target='_blank'><img src={`/assets/projectsData/${item}`} alt={`${popupProject?.title} ${index}`} key={index}/></a>
-                      </div>
-                    })
-                  }
-              />
-          </Modal.Body>
-          <Modal.Footer>
-          <Button auto flat color="error" onPress={() => setIsProjectPopupVisible(false)}>
-          {LocalizationTexts.MODAL_CLOSE[cookies.lang]}
-          </Button>
-        </Modal.Footer>
-      </Modal>
+      <ProjectPopup
+        popupProject={popupProject}
+        isProjectPopupVisible={isProjectPopupVisible}
+        setIsProjectPopupVisible={setIsProjectPopupVisible}
+      />
     </div>
   )
 }
