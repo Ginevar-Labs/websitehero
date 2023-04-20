@@ -159,7 +159,7 @@ const getBadge = (categoryId) => {
                   autoPlayDirection={'ltr'}
                   animationDuration={2500}
                   disableButtonsControls={true}
-                  disableDotsControls={false}
+                  disableDotsControls={true}
                   mouseTracking
                   responsive={responsive}
                   items={
