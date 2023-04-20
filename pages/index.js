@@ -159,8 +159,8 @@ const getBadge = (categoryId) => {
                   autoPlayDirection={'ltr'}
                   animationDuration={2500}
                   disableButtonsControls={true}
-                  disableDotsControls={true}
-                  // mouseTracking
+                  disableDotsControls={false}
+                  mouseTracking
                   responsive={responsive}
                   items={
                     ProjectData.map((item, index) => {

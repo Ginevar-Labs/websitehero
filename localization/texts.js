@@ -135,9 +135,9 @@ export default {
         "es": "Apps Mobile"
     },
     "WWD_SMART_CONTRACTS": {
-        "en": "Smart Contracts",
-        "it": "Smart Contracts",
-        "es": "Smart Contracts"
+        "en": "Web3",
+        "it": "Web3",
+        "es": "Web3"
     },
     "WWD_GAMES": {
         "en": "Games",
