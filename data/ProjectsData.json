@@ -117,12 +117,12 @@
         },
         "category": 4,
         "short":  {
-            "it": "Bluesmart App è il centro personale e il core di tutto il sistema di Smart Luggage Bluesmart",
+            "it": "Bluesmart App è il centro personale e il core di tutto il sistema di Smart Luggage Bluesmart.",
             "en": "Bluesmart App is your personal hub and at the core of the whole Bluesmart smart luggage system.",
             "es": "Bluesmart App es el HUB central y el core del sistema de smart luggage Bluesmart"
         },
         "description": {
-            "it": "Tutti i prodotti si conettano al app per controlarli e localizzarli. La nuova interface digitale fu concepita per migliorare la sperienza al viaggiare e per posizionare a BlueSmart come uno dei leader nel mercato di smart luggage.",
+            "it": "Tutti i prodotti si connettano all’app per controllarli e localizzarli. La nuova interface digitale è stata concepita per migliorare la esperienza dell’utente durante il viaggio e per posizionare BlueSmart come uno dei leader nel mercato di smart luggage.",
             "en": "All the products connect to the app to control and track them. The new digital interface is conceived to reduce the friction while traveling and become the ultimate smart travel companion.",
             "es": "Todos los productos se conectan al app para ser controlados y localizados. La nueva interfaz digital fue pensada para reducir la friccion al viajar y para posicionar a BlueSmart como uno de los lideres del mercado de smart luggage."
         },
@@ -161,14 +161,14 @@
         },
         "category": 4,
         "short":  {
-            "it": "Bluesmart App è il centro personale e il core di tutto il sistema di Smart Luggage Bluesmart",
-            "en": "Bluesmart App is your personal hub and at the core of the whole Bluesmart smart luggage system.",
-            "es": "Bluesmart App es el HUB central y el core del sistema de smart luggage Bluesmart"
+            "it": "ICAO4PILOTS è un'app progettata dagli esaminatori ICAO che utilizza l’intelligenza artificiale, machine learning, realtà aumentata e molto altro.",
+            "en": "ICAO4PILOTS is an app designed by ICAO examiners using AI, machine learning, augmented reality and more.",
+            "es": "ICAO4PILOTS es una aplicación diseñada por examinadores de la OACI que utiliza inteligencia artificial,machine learning, realidad aumentada y más."
         },
         "description": {
-            "it": "Tutti i prodotti si conettano al app per controlarli e localizzarli. La nuova interface digitale fu concepita per migliorare la sperienza al viaggiare e per posizionare a BlueSmart come uno dei leader nel mercato di smart luggage.",
-            "en": "All the products connect to the app to control and track them. The new digital interface is conceived to reduce the friction while traveling and become the ultimate smart travel companion.",
-            "es": "Todos los productos se conectan al app para ser controlados y localizados. La nueva interfaz digital fue pensada para reducir la friccion al viajar y para posicionar a BlueSmart como uno de los lideres del mercado de smart luggage."
+            "it": "L'app fornisce agli utenti, test ICAO organizzati per livelli ed esercizi illimitati approvati e progettati dagli esaminatori ICAO per migliorare il livello di inglese per l'aviazione.",
+            "en": "The app provides ICAO tests organized by levels and unlimited exercises approved and designed by ICAO examiners to upgrade your level of English for aviation and become proficient in it. ",
+            "es": "La aplicación ofrece pruebas de la OACI organizadas por niveles y ejercicios ilimitados para mejorar su nivel de inglés aeronáutico y dominarlo."
         },
         "link": "https://icao4pilots.com/en/",
         "assets": [
