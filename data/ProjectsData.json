@@ -23,6 +23,28 @@
     },
     {
         "title": {
+            "it": "Boersma Group",
+            "en": "Boersma Group",
+            "es": "Boersma Group"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Boersma Group è un'agenzia di pubblicità digitale con sede in Germania specializzata in outbound marketing e gestione dei social media.",
+            "en": "Boersma Group is a german-based digital ad agency specialized in outbound marketing and social media growth.",
+            "es": "Boersma Group es una agencia de publicidad digital con sede en Alemania especializada en outbond marketing y crecimiento de las redes sociales."
+        },
+        "description": {
+            "it": "Il sito Web include un sistema di gestione dei contenuti (CMS) del blog interno e del pannello dedicato agli amministratori.",
+            "en": "Website includes a Content Management System (CMS) for managing their inner built blog and admin panel.",
+            "es": "El sitio web incluye un sistema de administración de contenido (CMS) para administrar su blog interno y su panel de administración."
+        },
+        "link": "https://www.boersmagroup.com/",
+        "assets": [
+            "boersma1.png", "boersma2.png", "boersma3.png"
+        ]
+    },
+    {
+        "title": {
             "it": "Arredamento Chilton",
             "en": "Chilton Furnitures",
             "es": "Muebles Chilton"
@@ -67,6 +89,28 @@
     },
     {
         "title": {
+            "it": "TreeWallet",
+            "en": "TreeWallet",
+            "es": "TreeWallet"
+        },
+        "category": 5,
+        "short":  {
+            "it": "TreeWallet è un portafoglio per le criptovalute disponibile sia in versione desktop che come estensione per browser",
+            "en": "TreeWallet is a cryptocurrencies wallet available both in desktop and as a browser extension",
+            "es": "TreeWallet es una billetera de criptomonedas disponible en versiones desktop y como extensión de navegador"
+        },
+        "description": {
+            "it": ", sicura e con possibilità MultiChain per blockchains Ethereum Virtual Machine (EVM), Tron e Bitcoin, capace di inviare e ricevere qualsiasi token.",
+            "en": ", with enchanced security and multichain availability for the Ethereum Virtual Machine (EVM) based chains, Tron and Bitcoin networks, capable of sending and receiving any token.",
+            "es": ", con seguridad avanzada y multichain para blockchains de Ethereum Virtual Machine (EVM), Tron y Bitcoin, capaz de enviar y recibir cualquier token."
+        },
+        "link": "#",
+        "assets": [
+            "treewallet1.png"
+        ]
+    },
+    {
+        "title": {
             "it": "BlueSmart",
             "en": "BlueSmart",
             "es": "BlueSmart"
@@ -85,6 +129,28 @@
         "link": "#",
         "assets": [
             "bluesmart1.png"
+        ]
+    },
+    {
+        "title": {
+            "it": "Rare Paradise NFT",
+            "en": "Rare Paradise NFT",
+            "es": "Rare Paradise NFT"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Rare Paradise è un progetto NFT realizzato per Natale 2022 per la blockchain di Ethereum.",
+            "en": "Rare paradise is an NFT project for Christmas 2022, for the Ethereum blockchain. ",
+            "es": "Rare paradise es un proyecto de NFT realizado para la Navidad de 2022, para la blockchain de Ethereum. "
+        },
+        "description": {
+            "it": "Il sito web include minting, detection NFT e whitelisting lato clienti. Il progetto è andato soldout durante la prima settimana.",
+            "en": "Website includes minting, NFT detection, and client-side whitelist. The project soldout within the first week.",
+            "es": "El sitio web incluye minting, detección NFT y whitelist de lado cliente. El proyecto hizo soldout en la primera semana."
+        },
+        "link": "https://www.rareparadise.wtf/",
+        "assets": [
+            "rareparadise1.png", "rareparadise2.png", "rareparadise3.png", "rareparadise4.png"
         ]
     },
     {
