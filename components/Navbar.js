@@ -5,7 +5,6 @@ import { icons } from "./icons.js";
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
-
 export default function Home({ origin, onGoLink }) {
     const [cookies, setCookie] = useCookies(['lang']);
     const collapseItems = [
@@ -60,7 +59,7 @@ export default function Home({ origin, onGoLink }) {
                     <Navbar.Toggle className='navbar-custom-toggle' aria-label="toggle navigation" css={{
                     marginRight: '20px'
                     }}/>
-                    <a href='/'><Image width={200} height={30} src='/assets/logo_ginevar_hd.png'/></a>
+                    <Link href='/'><Image alt='Ginevar logo' width={200} height={30} src='/assets/logo_ginevar_hd.png'/></Link>
                 </Navbar.Brand>
                 <Navbar.Content  
                     // enableCursorHighlight 

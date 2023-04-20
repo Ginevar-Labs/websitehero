@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import dynamic from 'next/dynamic'
-import { Badge, Spacer, Modal, Button } from '@nextui-org/react';
+import { Badge, Spacer, Modal, Button, Link } from '@nextui-org/react';
 // import Navbar from './../components/Navbar'
 import { useEffect, useState } from 'react';
 import { useCookies } from 'react-cookie';
@@ -51,9 +51,10 @@ export default function Home() {
       }
     }
   }
+
   useEffect(() => {
     loadInitialData();
-  }, []);
+  });
 
   const changeLanguage = (langcode) => {
     setCookie('lang', langcode, { path: '/' });
@@ -170,11 +171,11 @@ const getBadge = (categoryId) => {
                     })
                   }
               />
-          <a href='/portfolio' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</a>
+          <Link href='/portfolio' className='gnvPPWCarouselLink'>{LocalizationTexts.PROJECTS_SEE_ALL[cookies.lang]}</Link>
           </div>
 
           <div className='gnvPPWMethodBox'>
-            <a href='#'><p>{LocalizationTexts.PROJECTS_LEARN_MORE_WM_PREFIX[cookies.lang]} <u>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</u></p></a>
+            <Link href='#'><p>{LocalizationTexts.PROJECTS_LEARN_MORE_WM_PREFIX[cookies.lang]} <u>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</u></p></Link>
           </div>
 
         </div>
@@ -206,7 +207,7 @@ const getBadge = (categoryId) => {
             <div className='gnvOpenPosLineRight'/>
           </div>
 
-          <a href='mailto:careers@ginevar.com'><button className='gnvDescBoxButton'>{LocalizationTexts.CAREERS_APPLY[cookies.lang]}</button></a>
+          <Link className='gnvDescBoxButtonParent' href='mailto:careers@ginevar.com'><button className='gnvDescBoxButton'>{LocalizationTexts.CAREERS_APPLY[cookies.lang]}</button></Link>
         </div>
 
         <div className='gnvPinkBG'>
@@ -229,7 +230,7 @@ const getBadge = (categoryId) => {
 
             <br/>
 
-            <a href='mailto:contact@ginevar.com'><button className='gnvDescBoxButton gnvDescBoxButtonRight'>{LocalizationTexts.CONTACT_CONTACT_US[cookies.lang]}</button></a>
+            <Link className='gnvDescBoxButtonRight' href='mailto:contact@ginevar.com'><button className='gnvDescBoxButton'>{LocalizationTexts.CONTACT_CONTACT_US[cookies.lang]}</button></Link>
         </div>
 
       </main>

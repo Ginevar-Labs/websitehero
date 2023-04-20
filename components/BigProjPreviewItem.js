@@ -16,7 +16,7 @@ export default function BigProjPreviewItem({ onClick, data }) {
         }} className='bigProjPrevItem'>
           <h1 className='pPIvistitle'>{data.title[cookies.lang]}</h1>
           <p className='pPIvisdesc'>{data.short[cookies.lang]} {data.description[cookies.lang]}</p>
-          <img className='pPIimage' src={'/assets/projectsData/'+data.assets[0]}/>
+          <img alt={'Screenshot '+data.title[cookies.lang]} className='pPIimage' src={'/assets/projectsData/'+data.assets[0]}/>
         </div>
     </div>
   )

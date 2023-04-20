@@ -51,7 +51,7 @@ export default function Portfolio() {
   }
   useEffect(() => {
     loadInitialData();
-  }, []);
+  });
 
   const changeLanguage = (langcode) => {
     setCookie('lang', langcode, { path: '/' });

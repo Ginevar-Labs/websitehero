@@ -20,7 +20,7 @@ export default function ProjPreviewItem({ onClick, data }) {
             <br/>
             {/* {data.description[cookies.lang]} */}
           </div>
-          <img className='pPIimage' src={'/assets/projectsData/'+data.assets[0]}/>
+          <img alt={'Screenshot '+data.title[cookies.lang]} className='pPIimage' src={'/assets/projectsData/'+data.assets[0]}/>
         </div>
     </div>
   )

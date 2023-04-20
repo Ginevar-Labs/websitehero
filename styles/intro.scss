@@ -237,7 +237,14 @@
     text-align: right;
 }
 
+.gnvDescBoxButtonParent {
+
+    margin-right: calc(50% - 90px);
+    margin-left: calc(50% - 90px);
+}
+
 .gnvDescBoxButton {
+    position: relative;
     color: #AD37A9;
     border: 2px solid #AD37A9;
     background-color: transparent;
@@ -245,8 +252,6 @@
     padding: 10px 20px;
     transition: 0.2s all ease-out;
     width: 180px;
-    margin-right: calc(50% - 90px);
-    margin-left: calc(50% - 90px);
     font-size: 1.2em;
     // margin-bottom: 40px;
 
@@ -395,13 +400,14 @@
 
     .gnvPPWCarouselLink {
         position: absolute;
-        bottom: 0;
+        bottom: -70px;
         font-weight: 500;
-        left: calc(90% - 60px);
+        left: calc(90% + 30px);
         width: 120px;
         text-align: right;
         transition: 0.2s all ease-out;
-        font-size: 1.2em;
+        font-size: 1em;
+        color: white;
 
         &:hover {
             color: #9E6FB6;
@@ -414,6 +420,10 @@
     margin-top: 40px;
     margin-left: 15%;
     font-size: 1.2em;
+    
+    a {
+        color: white;
+    }
 
     &:hover {
         u {
@@ -484,6 +494,13 @@
         .gnvWWDBox {
             width: 35vw;
             height: 35vw;
+        }
+    }
+
+    .gnvPPWCarouselContainer {
+        .gnvPPWCarouselLink {
+            left: 0%;
+            bottom: -30px;
         }
     }
     

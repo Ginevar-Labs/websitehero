@@ -38,7 +38,7 @@ export default function ProjectPopup({ popupProject, isProjectPopupVisible, setI
           
           <p style={{width: '100%', fontSize: '1.4em'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
           <br/>
-          <p style={{fontSize: '1.4em'}}><b>Link:</b> <a href={popupProject?.link} target='_blank'>{popupProject?.link}</a></p>
+          <p style={{fontSize: '1.4em'}}><b>Link:</b> <Link href={popupProject?.link} target='_blank'>{popupProject?.link}</Link></p>
           <br/>
           {getBadge(popupProject?.category)}
           </div>
@@ -62,7 +62,7 @@ export default function ProjectPopup({ popupProject, isProjectPopupVisible, setI
                   items={
                     popupProject?.assets.map((item, index) => {
                       return <div key={index} className='popupImageContainer'>
-                        <a href={`/assets/projectsData/${item}`} target='_blank'><img src={`/assets/projectsData/${item}`} alt={`${popupProject?.title} ${index}`} key={index}/></a>
+                        <Link href={`/assets/projectsData/${item}`} target='_blank'><img alt={'Screenshot '+popupProject?.title[cookies.lang]} src={`/assets/projectsData/${item}`} key={index}/></Link>
                       </div>
                     })
                   }

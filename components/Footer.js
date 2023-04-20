@@ -5,7 +5,6 @@ import { icons } from "./icons.js";
 import { useState } from 'react';
 import { useCookies } from 'react-cookie';
 import LocalizationTexts from '../localization/texts.js'
-
 export default function Footer({  }) {
     const [cookies, setCookie] = useCookies(['lang']);
 
@@ -18,44 +17,44 @@ export default function Footer({  }) {
     <footer>
     <div className='gnvFooterContainer'>
       <div className='gnvFooterBanner'>
-        <img src='/assets/squared_logo.png'/>
+        <img alt='Ginevar logo' src='/assets/squared_logo.png'/>
         <p><b>Ginevar</b></p>
         <p>{LocalizationTexts.LOCATION[cookies.lang]}</p>
         {/* <p>ID</p> */}
       </div>
       <div className='gnvFooterLinksColumn'>
         <div className='gnvFLCLeft'>
-          <a href='/#what-we-do'><h1>{LocalizationTexts.MENU_WHATWEDO[cookies.lang]}</h1></a>
-          <a href='#'><p>{LocalizationTexts.WWD_WEBSITES[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_MOTION_GRAPHICS[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_UX_UI[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_BACKEND[cookies.lang]}</p></a>
+          <Link href='/#what-we-do'><h1>{LocalizationTexts.MENU_WHATWEDO[cookies.lang]}</h1></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_WEBSITES[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_MOTION_GRAPHICS[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_UX_UI[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_BACKEND[cookies.lang]}</p></Link>
         </div>
         <div className='gnvFLCRight'>
           <div style={{height: '30px'}}/>
-          <a href='#'><p>{LocalizationTexts.WWD_MOBILE_APPS[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_SMART_CONTRACTS[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_GAMES[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.WWD_CONSULTANCY[cookies.lang]}</p></a>
+          <Link href='#'><p>{LocalizationTexts.WWD_MOBILE_APPS[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_SMART_CONTRACTS[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_GAMES[cookies.lang]}</p></Link>
+          <Link href='#'><p>{LocalizationTexts.WWD_CONSULTANCY[cookies.lang]}</p></Link>
         </div>
       </div>
       <div className='gnvFooterLinksColumn'>
       <div className='gnvFLCLeft'>
         {/* <a href='#'><h1>{LocalizationTexts.MENU_SOFTWARE[cookies.lang]}</h1></a> */}
         {/* <div style={{height: '30px'}}/> */}
-        <a href='/#projects-and-past-work'><h1>{LocalizationTexts.MENU_WORK[cookies.lang]}</h1></a>
-          <a href='#'><p>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</p></a>
-          <a href='/portfolio'><p>{LocalizationTexts.FOOTER_WORK_PORTFOLIO[cookies.lang]}</p></a>
+        <Link href='/#projects-and-past-work'><h1>{LocalizationTexts.MENU_WORK[cookies.lang]}</h1></Link>
+          <Link href='#'><p>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</p></Link>
+          <Link href='/portfolio'><p>{LocalizationTexts.FOOTER_WORK_PORTFOLIO[cookies.lang]}</p></Link>
         <div style={{height: '30px'}}/>
-          <a href='/#careers'><h1>{LocalizationTexts.MENU_CAREERS[cookies.lang]}</h1></a>
+          <Link href='/#careers'><h1>{LocalizationTexts.MENU_CAREERS[cookies.lang]}</h1></Link>
       </div>
       <div className='gnvFLCRight'>
       
-        <a href='#'><h1>{LocalizationTexts.MENU_CONTACT[cookies.lang]}</h1></a>
+        <Link href='#'><h1>{LocalizationTexts.MENU_CONTACT[cookies.lang]}</h1></Link>
         <div style={{height: '30px'}}/>
-        <a onClick={() => changeLanguage('en')}><p>{LocalizationTexts.MENU_LANG_ENGLISH[cookies.lang]}</p></a>
-        <a onClick={() => changeLanguage('es')}><p>{LocalizationTexts.MENU_LANG_SPANISH[cookies.lang]}</p></a>
-        <a onClick={() => changeLanguage('it')}><p>{LocalizationTexts.MENU_LANG_ITALIAN[cookies.lang]}</p></a>
+        <Link onClick={() => changeLanguage('en')}><p>{LocalizationTexts.MENU_LANG_ENGLISH[cookies.lang]}</p></Link>
+        <Link onClick={() => changeLanguage('es')}><p>{LocalizationTexts.MENU_LANG_SPANISH[cookies.lang]}</p></Link>
+        <Link onClick={() => changeLanguage('it')}><p>{LocalizationTexts.MENU_LANG_ITALIAN[cookies.lang]}</p></Link>
       </div>
       </div>
     </div>
