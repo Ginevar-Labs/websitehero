@@ -100,11 +100,11 @@ body{
     overflow: hidden;
 
     .pPIvistitle {
-      font-size: 26px;
+      font-size: 1.2em;
     }
 
     .pPIvisdesc {
-      font-size: 18px;
+      font-size: 1em;
       opacity: 0.4;
       max-width: 60%;
     }
@@ -184,17 +184,17 @@ body{
     height: 90%;
     aspect-ratio: 1.0;
     position: relative;
-    background-color: rgba(30, 29, 29, 0.635);
+    background-color: rgba(30, 29, 29, 1);
     font-family: 'Open Sans';
     padding: 10px 20px;
     overflow: hidden;
 
     .pPIvistitle {
-      font-size: 26px;
+      font-size: 1.2em;
     }
 
     .pPIvisdesc {
-      font-size: 18px;
+      font-size: 1em;
       opacity: 0.4;
     }
 

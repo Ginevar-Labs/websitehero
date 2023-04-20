@@ -60,7 +60,7 @@ export default function Home({ origin, onGoLink }) {
                     <Navbar.Toggle className='navbar-custom-toggle' aria-label="toggle navigation" css={{
                     marginRight: '20px'
                     }}/>
-                    <a href='#page-index'><Image width={200} height={30} src='/assets/logo_ginevar_hd.png'/></a>
+                    <a href='/'><Image width={200} height={30} src='/assets/logo_ginevar_hd.png'/></a>
                 </Navbar.Brand>
                 <Navbar.Content  
                     // enableCursorHighlight 
@@ -83,6 +83,7 @@ export default function Home({ origin, onGoLink }) {
                                   px: 0,
                                   dflex: "center",
                                   svg: { pe: "none" },
+                                  fontSize: '1.2em !important'
                                 }}
                                 iconRight={icons.chevron}
                                 ripple={false}
@@ -115,7 +116,7 @@ export default function Home({ origin, onGoLink }) {
                                     key="english"
                                     icon={icons.scale}
                                 >
-                                    <div onClick={() => {changeLanguage('en')}}>
+                                    <div style={{fontSize: '1.2em'}} onClick={() => {changeLanguage('en')}}>
                                         {LocalizationTexts.MENU_LANG_ENGLISH[cookies.lang]}
                                     </div>
                                 </Dropdown.Item>
@@ -123,7 +124,7 @@ export default function Home({ origin, onGoLink }) {
                                     key="spanish"
                                     icon={icons.activity}
                                 >
-                                    <div onClick={() => {changeLanguage('es')}}>
+                                    <div style={{fontSize: '1.2em'}} onClick={() => {changeLanguage('es')}}>
                                         {LocalizationTexts.MENU_LANG_SPANISH[cookies.lang]}
                                     </div>
                                 </Dropdown.Item>
@@ -131,7 +132,7 @@ export default function Home({ origin, onGoLink }) {
                                     key="italian"
                                     icon={icons.flash}
                                 >
-                                    <div onClick={() => {changeLanguage('it')}}>
+                                    <div style={{fontSize: '1.2em'}} onClick={() => {changeLanguage('it')}}>
                                         {LocalizationTexts.MENU_LANG_ITALIAN[cookies.lang]}
                                     </div>
                                 </Dropdown.Item>

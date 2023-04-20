@@ -9,6 +9,7 @@
         color: #CC4799;
         text-align: left;
         margin-bottom: 2.5%;
+        font-size: 3.5em;
     }
 
     .gnvIntro-right {
@@ -20,6 +21,7 @@
         text-align: right;
         color: #9E6FB6;
         margin-bottom: 2.5%;
+        font-size: 3.5em;
     }
 
     .gnvIntro-center {
@@ -27,7 +29,7 @@
         padding-left: 25%;
         font-family: 'Open Sans';
         margin: 0px;
-        font-size: 14px;
+        font-size: 1em;
         text-align: center;
         color: #d1b7bc8e;
     }
@@ -38,7 +40,7 @@
         margin: 0px;
         text-align: justify;
         color: #D1B7BC;
-        font-size: 18px;
+        font-size: 1.2em;
     }
 
     .gnvIntro-gradient-text {
@@ -82,7 +84,7 @@
     h1 {
         position: relative;
         font-family: 'Open Sans';
-        font-size: 30px;
+        font-size: 2em;
         // line-height: 110px;
         
         height: 60px;
@@ -154,7 +156,7 @@
     h1 {
         position: relative;
         font-family: 'Open Sans';
-        font-size: 30px;
+        font-size: 2em;
         // line-height: 110px;
         
         height: 60px;
@@ -208,6 +210,7 @@
     .gnvTitleBoxDesc {
         margin-top: 100px;
         padding-left: 50px;
+        font-size: 1.2em;
     }
 
     &::after {
@@ -222,7 +225,7 @@
     padding-left: 10%;
     padding-right: 10%;
     position: relative;
-    font-size: 20px;
+    font-size: 1.2em;
     font-family: 'Open Sans';
     color: rgba(255, 255, 255, 0.588);
     text-align: justify;
@@ -244,6 +247,7 @@
     width: 180px;
     margin-right: calc(50% - 90px);
     margin-left: calc(50% - 90px);
+    font-size: 1.2em;
     // margin-bottom: 40px;
 
     &:hover {
@@ -276,13 +280,13 @@
         text-align: center;
         color: #a39fa2;
         opacity: 0.7;
-        font-size: 20px;
+        font-size: 1.4em;
     }
 
     .gnvOP-random {
         text-align: justify;
         color: #C58FB0;
-        font-size: 20px;
+        font-size: 1.2em;
     }
 
     .gnvOpenPosLineLeft {
@@ -341,6 +345,7 @@
             opacity: 0.1;
             transition: 0.5s all ease-out;
             text-align: left;
+            font-size: 1em;
         }
 
 
@@ -396,6 +401,7 @@
         width: 120px;
         text-align: right;
         transition: 0.2s all ease-out;
+        font-size: 1.2em;
 
         &:hover {
             color: #9E6FB6;
@@ -407,6 +413,7 @@
     width: 70%;
     margin-top: 40px;
     margin-left: 15%;
+    font-size: 1.2em;
 
     &:hover {
         u {
@@ -434,7 +441,7 @@
         .gnvIntro-center {
             padding: 10%;
             width: 100%;
-            font-size: 20px;
+            font-size: 1.2em;
         }
     }
 

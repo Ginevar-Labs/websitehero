@@ -25,7 +25,7 @@ export default function Footer({  }) {
       </div>
       <div className='gnvFooterLinksColumn'>
         <div className='gnvFLCLeft'>
-          <a href='#'><h1>{LocalizationTexts.MENU_WHATWEDO[cookies.lang]}</h1></a>
+          <a href='/#what-we-do'><h1>{LocalizationTexts.MENU_WHATWEDO[cookies.lang]}</h1></a>
           <a href='#'><p>{LocalizationTexts.WWD_WEBSITES[cookies.lang]}</p></a>
           <a href='#'><p>{LocalizationTexts.WWD_MOTION_GRAPHICS[cookies.lang]}</p></a>
           <a href='#'><p>{LocalizationTexts.WWD_UX_UI[cookies.lang]}</p></a>
@@ -43,11 +43,11 @@ export default function Footer({  }) {
       <div className='gnvFLCLeft'>
         {/* <a href='#'><h1>{LocalizationTexts.MENU_SOFTWARE[cookies.lang]}</h1></a> */}
         {/* <div style={{height: '30px'}}/> */}
-        <a href='#'><h1>{LocalizationTexts.MENU_WORK[cookies.lang]}</h1></a>
+        <a href='/#projects-and-past-work'><h1>{LocalizationTexts.MENU_WORK[cookies.lang]}</h1></a>
           <a href='#'><p>{LocalizationTexts.FOOTER_WORKING_METHOD[cookies.lang]}</p></a>
-          <a href='#'><p>{LocalizationTexts.FOOTER_WORK_PORTFOLIO[cookies.lang]}</p></a>
+          <a href='/portfolio'><p>{LocalizationTexts.FOOTER_WORK_PORTFOLIO[cookies.lang]}</p></a>
         <div style={{height: '30px'}}/>
-          <a href='#'><h1>{LocalizationTexts.MENU_CAREERS[cookies.lang]}</h1></a>
+          <a href='/#careers'><h1>{LocalizationTexts.MENU_CAREERS[cookies.lang]}</h1></a>
       </div>
       <div className='gnvFLCRight'>
       
@@ -60,7 +60,7 @@ export default function Footer({  }) {
       </div>
     </div>
     <br/>
-    <Spacer y={15}/>
+    <Spacer y={10}/>
     <br/>
     <div style={{textAlign: 'center',float:'left', width: '100%',marginBottom: '40px', marginTop: '0px', opacity: '0.6'}}>
       <p>© Ginevar 2023</p>

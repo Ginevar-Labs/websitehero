@@ -36,9 +36,9 @@ export default function ProjectPopup({ popupProject, isProjectPopupVisible, setI
           <div style={{textAlign: 'left'}}>
           <h2 style={{width: '100%', textAlign: 'center'}}>{popupProject?.title[cookies.lang] ?? ''}</h2>
           
-          <p style={{width: '100%', fontSize: '22px'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
+          <p style={{width: '100%', fontSize: '1.4em'}}>{popupProject?.short[cookies.lang]} {popupProject?.description[cookies.lang]}</p>
           <br/>
-          <p style={{fontSize: '22px'}}><b>Link:</b> <a href={popupProject?.link} target='_blank'>{popupProject?.link}</a></p>
+          <p style={{fontSize: '1.4em'}}><b>Link:</b> <a href={popupProject?.link} target='_blank'>{popupProject?.link}</a></p>
           <br/>
           {getBadge(popupProject?.category)}
           </div>
@@ -70,7 +70,7 @@ export default function ProjectPopup({ popupProject, isProjectPopupVisible, setI
           </Modal.Body>
           <Modal.Footer>
           <Button auto flat color="error" style={{
-            fontSize: '20px'
+            fontSize: '1.2em'
           }} onPress={() => setIsProjectPopupVisible(false)}>
           {LocalizationTexts.MODAL_CLOSE[cookies.lang]}
           </Button>
