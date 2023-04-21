@@ -23,28 +23,6 @@
     },
     {
         "title": {
-            "it": "Boersma Group",
-            "en": "Boersma Group",
-            "es": "Boersma Group"
-        },
-        "category": 0,
-        "short":  {
-            "it": "Boersma Group è un'agenzia di pubblicità digitale con sede in Germania specializzata in outbound marketing e gestione dei social media.",
-            "en": "Boersma Group is a german-based digital ad agency specialized in outbound marketing and social media growth.",
-            "es": "Boersma Group es una agencia de publicidad digital con sede en Alemania especializada en outbond marketing y crecimiento de las redes sociales."
-        },
-        "description": {
-            "it": "Il sito Web include un sistema di gestione dei contenuti (CMS) del blog interno e del pannello dedicato agli amministratori.",
-            "en": "Website includes a Content Management System (CMS) for managing their inner built blog and admin panel.",
-            "es": "El sitio web incluye un sistema de administración de contenido (CMS) para administrar su blog interno y su panel de administración."
-        },
-        "link": "https://www.boersmagroup.com/",
-        "assets": [
-            "boersma1.png"
-        ]
-    },
-    {
-        "title": {
             "it": "Arredamento Chilton",
             "en": "Chilton Furnitures",
             "es": "Muebles Chilton"
@@ -173,6 +151,29 @@
         "link": "https://icao4pilots.com/en/",
         "assets": [
             "icao1.png", "icao2.png"
+        ]
+    },
+
+    {
+        "title": {
+            "it": "Boersma Group",
+            "en": "Boersma Group",
+            "es": "Boersma Group"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Boersma Group è un'agenzia di pubblicità digitale con sede in Germania specializzata in outbound marketing e gestione dei social media.",
+            "en": "Boersma Group is a german-based digital ad agency specialized in outbound marketing and social media growth.",
+            "es": "Boersma Group es una agencia de publicidad digital con sede en Alemania especializada en outbond marketing y crecimiento de las redes sociales."
+        },
+        "description": {
+            "it": "Il sito Web include un sistema di gestione dei contenuti (CMS) del blog interno e del pannello dedicato agli amministratori.",
+            "en": "Website includes a Content Management System (CMS) for managing their inner built blog and admin panel.",
+            "es": "El sitio web incluye un sistema de administración de contenido (CMS) para administrar su blog interno y su panel de administración."
+        },
+        "link": "https://www.boersmagroup.com/",
+        "assets": [
+            "boersma1.png"
         ]
     }
 ]
