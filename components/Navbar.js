@@ -54,7 +54,7 @@ export default function Home({ origin, onGoLink }) {
                 boxSizing: 'border-box',
                 maxWidth: '100%'
             }}>
-                <Navbar className='navbar-custom' variant='sticky'>
+                <Navbar shouldHideOnScroll className='navbar-custom' variant='sticky'>
                 <Navbar.Brand>
                     <Navbar.Toggle className='navbar-custom-toggle' aria-label="toggle navigation" css={{
                     marginRight: '20px'
@@ -150,6 +150,10 @@ export default function Home({ origin, onGoLink }) {
                             minWidth: "100%",
                         }}
                         href={item.link}
+                        onClick={() => {
+                            onGoLink(item.code);
+                            document.body.style.overflow = "";
+                        }}
                         >
                         {item.name}
                         </Link>
