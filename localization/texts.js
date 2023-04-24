@@ -26,7 +26,7 @@ export default {
     },
     "GNV_INTRO_GINEVAR_IS": {
         "en": "is a software development company based in Monza, Italy, that is focused on delivering innovative solutions to businesses across various industries. We understand that technology is crucial in unlocking the full potential of an organization and we are dedicated to helping clients achieve this goal.",
-        "it": "è è una azienda di sviluppo software con sede a Monza focalizzata nel fornire le soluzioni più innovative a business di vari settori. Pensiamo che la tecnologia sia fondamentale per sbloccare il completo potenziale di qualsiasi azienda e ci dedichiamo ad aiutare e guidare i nostri cliente a raggiungere questo obiettivo.",
+        "it": "è una azienda di sviluppo software con sede a Monza focalizzata nel fornire le soluzioni più innovative a business di vari settori. Pensiamo che la tecnologia sia fondamentale per sbloccare il completo potenziale di qualsiasi azienda e ci dedichiamo ad aiutare e guidare i nostri cliente a raggiungere questo obiettivo.",
         "es": "es una empresa de desarrollo de software ubicada en Monza, Italia, enfocada a brindar soluciones innovadoras para business de varias industrias. Sabemos que la tecnologia es crucial en desbloquear el potencial completo de una organizacion, y nos dedicamos a guiar y ayudar a los clientes a cumplir este objetivo."
     },
     "GNV_INTRO_WITH_A_TEAM": {
