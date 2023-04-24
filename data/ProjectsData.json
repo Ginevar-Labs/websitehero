@@ -23,6 +23,28 @@
     },
     {
         "title": {
+            "it": "BTC Absolute",
+            "en": "BTC Absolute",
+            "es": "BTC Absolute"
+        },
+        "category": 5,
+        "short":  {
+            "it": "Bitcoin Absolute es una extensión de la chain Fantom ",
+            "en": "Bitcoin Absolute is an extension of the Fantom chain ",
+            "es": "Bitcoin Absolute è un'estensione della chain Fantom "
+        },
+        "description": {
+            "it": ", que aprovecha la seguridad y la escalabilidad para impulsar la producción de transacciones de su digital ledger. La plataforma era open-sourced o y actualmente se está construyendo.",
+            "en": ", which leverages security and scalability to boost transaction output of their digital ledger. Platform was open-sourced and is currently being built on.",
+            "es": ", che sfrutta la sicurezza e la scalabilità per aumentare l'output delle transazioni del digital ledger. La piattaforma era open source ed è attualmente in fase di sviluppo."
+        },
+        "link": "https://btcabsolute.vercel.app/",
+        "assets": [
+            "btcabsolut1.png", "btcabsolut2.png", "btcabsolut3.png"
+        ]
+    },
+    {
+        "title": {
             "it": "Arredamento Chilton",
             "en": "Chilton Furnitures",
             "es": "Muebles Chilton"
@@ -41,6 +63,28 @@
         "link": "https://www.chiltons.com/",
         "assets": [
             "chilton1.png", "chilton2.png"
+        ]
+    },
+    {
+        "title": {
+            "it": "PayBro",
+            "en": "PayBro",
+            "es": "PayBro"
+        },
+        "category": 0,
+        "short":  {
+            "it": "Paybro è un gateway di pagamenti digitali ",
+            "en": "Paybro is a digital payments gateway ",
+            "es": "Paybro es un gateway de pagos digitales "
+        },
+        "description": {
+            "it": ", raccoglie tutte le transazioni fra i portafogli crittografici e calcola l'importo di tasse dovute da pagare alla fine dell'anno fiscale. Offre inoltre la possibilità agli utenti di scaricare e inviare le proprie ricevute comodamente dall'app.",
+            "en": "that enables transactions on your website with little to no code. Users can pay with Credit card or cryptocurrencies and have their transaction executed instantly.",
+            "es": "che consente effettuare transazioni sul proprio sito web utilizzando un framework plug-and-play. Gli utenti possono pagare con carta di credito o criptovalute e le transazioni vengono eseguite all'istante."
+        },
+        "link": "https://paybro.vercel.app/",
+        "assets": [
+            "paybro1.png", "paybro2.png"
         ]
     },
     {
@@ -153,7 +197,28 @@
             "icao1.png", "icao2.png"
         ]
     },
-
+    {
+        "title": {
+            "it": "TaxSlice",
+            "en": "TaxSlice",
+            "es": "TaxSlice"
+        },
+        "category": 0,
+        "short":  {
+            "it": "TaxSlice è uno tool che automatizza i calcoli relativi alla dichiarazione fiscale ",
+            "en": "TaxSlice is an automatic tax reporting tool ",
+            "es": "TaxSlice es una herramienta automática de informes de impuestos "
+        },
+        "description": {
+            "it": ", raccoglie tutte le transazioni fra i portafogli crittografici e calcola l'importo di tasse dovute da pagare alla fine dell'anno fiscale. Offre inoltre la possibilità agli utenti di scaricare e inviare le proprie ricevute comodamente dall'app.",
+            "en": "that gathers all your transactions between crypto wallets and calculates the amount you will have to pay at the end of the fiscal year. Users can afterwards download and submit their reports from within the app in a fraction of the time.",
+            "es": "que junta todas las transacciones entre billeteras de crypto y calcula la cantidad de impuestos da pagar al final del año fiscal. Ademas, los usuarios pueden descargar y enviar sus informes comodamente desde la aplicación."
+        },
+        "link": "https://taxslice.vercel.app/",
+        "assets": [
+            "taxslice1.png"
+        ]
+    },
     {
         "title": {
             "it": "Boersma Group",
