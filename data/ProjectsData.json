@@ -29,14 +29,14 @@
         },
         "category": 5,
         "short":  {
-            "it": "Bitcoin Absolute es una extensión de la chain Fantom ",
+            "es": "Bitcoin Absolute es una extensión de la chain Fantom ",
             "en": "Bitcoin Absolute is an extension of the Fantom chain ",
-            "es": "Bitcoin Absolute è un'estensione della chain Fantom "
+            "it": "Bitcoin Absolute è un'estensione della chain Fantom "
         },
         "description": {
-            "it": ", que aprovecha la seguridad y la escalabilidad para impulsar la producción de transacciones de su digital ledger. La plataforma era open-sourced o y actualmente se está construyendo.",
+            "es": ", que aprovecha la seguridad y la escalabilidad para impulsar la producción de transacciones de su digital ledger. La plataforma era open-sourced o y actualmente se está construyendo.",
             "en": ", which leverages security and scalability to boost transaction output of their digital ledger. Platform was open-sourced and is currently being built on.",
-            "es": ", che sfrutta la sicurezza e la scalabilità per aumentare l'output delle transazioni del digital ledger. La piattaforma era open source ed è attualmente in fase di sviluppo."
+            "it": ", che sfrutta la sicurezza e la scalabilità per aumentare l'output delle transazioni del digital ledger. La piattaforma era open source ed è attualmente in fase di sviluppo."
         },
         "link": "https://btcabsolute.vercel.app/",
         "assets": [
