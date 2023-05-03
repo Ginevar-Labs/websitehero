@@ -91,7 +91,7 @@ const getBadge = (categoryId) => {
           <h1 className='gnvIntro-right'>{LocalizationTexts.GNV_INTRO_RIGHT[cookies.lang]}</h1>
           <p className='gnvIntro-center'>{LocalizationTexts.GNV_INTRO_CENTER[cookies.lang]}</p>
           <Spacer y={4}/>
-          <p className='gnvIntro-center-big'><span className='gnvIntro-gradient-text'>Ginevar</span> {LocalizationTexts.GNV_INTRO_GINEVAR_IS[cookies.lang]}</p>
+          <p className='gnvIntro-center-big'>{LocalizationTexts.GNV_INTRO_GINEVAR_IS_PRE[cookies.lang]} <span className='gnvIntro-gradient-text'>Ginevar</span> {LocalizationTexts.GNV_INTRO_GINEVAR_IS[cookies.lang]}</p>
           <br/>
           <p className='gnvIntro-center-big'>{LocalizationTexts.GNV_INTRO_WITH_A_TEAM[cookies.lang]}</p>
         </div>

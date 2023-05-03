@@ -24,10 +24,15 @@ export default {
         "it": "Dai vita al tuo software ideale con i nostri servizi di sviluppo completi end to end. Affidati a noi per utilizzare le più innovative soluzioni che soddisfano le esigenze del tuo business in ogni campo.",
         "es": "Da vida a tu software ideal con nuestros servicios de desarrollo completos end to end. Confia en nosotros para utilizar las soluciones mas innovadoras para satisfacer las exigencias de tu business en cada area."
     },
+    "GNV_INTRO_GINEVAR_IS_PRE": {
+        "en": "In",
+        "it": "In",
+        "es": "En"
+    },
     "GNV_INTRO_GINEVAR_IS": {
-        "en": "is a software development company based in Monza, Italy, that is focused on delivering innovative solutions to businesses across various industries. We understand that technology is crucial in unlocking the full potential of an organization and we are dedicated to helping clients achieve this goal.",
-        "it": "è una azienda di sviluppo software con sede a Monza focalizzata nel fornire le soluzioni più innovative a business di vari settori. Pensiamo che la tecnologia sia fondamentale per sbloccare il completo potenziale di qualsiasi azienda e ci dedichiamo ad aiutare e guidare i nostri cliente a raggiungere questo obiettivo.",
-        "es": "es una empresa de desarrollo de software ubicada en Monza, Italia, enfocada a brindar soluciones innovadoras para business de varias industrias. Sabemos que la tecnologia es crucial en desbloquear el potencial completo de una organizacion, y nos dedicamos a guiar y ayudar a los clientes a cumplir este objetivo."
+        "en": "we focus on delivery innovative solutions to businesses across various industries. We understand that technology is crucial in unlocking the full potential of an organization and we are dedicated to helping clients achieve this goal.",
+        "it": "ci occupiamo di sviluppo software, ci focalizziamo nel fornire le soluzioni più innovative a business di vari settori. Pensiamo che la tecnologia sia fondamentale per sbloccare il completo potenziale di qualsiasi azienda e ci dedichiamo ad aiutare e guidare i nostri cliente a raggiungere questo obiettivo.",
+        "es": "nos ocupamos de es desarrollo de software, enfocandonos a brindar soluciones innovadoras para business de varias industrias. Sabemos que la tecnologia es crucial en desbloquear el potencial completo de una organizacion, y nos dedicamos a guiar y ayudar a los clientes a cumplir este objetivo."
     },
     "GNV_INTRO_WITH_A_TEAM": {
         "en": "With a team of highly skilled developers Ginevar is capable of bringing any software development project to life. We offer a range of services including custom software development, website design, mobile app development, and more. Our experts work closely with clients to ensure that their projects exceed expectations. We are passionate about using technology to drive progress and create growth opportunities for their clients. Contact us to learn more about our services.",
