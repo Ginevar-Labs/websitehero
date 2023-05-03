@@ -190,9 +190,9 @@ export default {
         "es": "Si tienes experiencia en desarrollo de software, diseño, marketing o ventas, o si quieres empezar una nueva etapa y cambiar de campo, te aconsejamos aplicar. Estamos constantemente en crecimiento y expandiendo nuestros negocios, y de resultado tomamos en consideraciones todas las aplicaciones aunque no haya ninguna posicion abierta al momento. Envia tu CV a careers@ginevar.com"
     },
     "CAREERS_INTRO_TEXT": {
-        "en": "If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume. Our company values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.",
-        "it": "Se stai cercando una nuova ed entusiasmante opportunità professionale per entrare a fare parte di un team dinamico ed innovativo, vorremo invitarti ad inviare il tuo curriculum. La nostra azienda valora la creatività e la passione e siamo sempre alla ricerca di persone che condividano con noi questi valori.",
-        "es": "Si estas buscando una nueva y exitante oportunidad para crecer laboralmente y ser parte de un team dinamico e innovativo, nos gustaria invitarte a enviar tu curriculum. Nuestra empresa valora el trabajo duro, la creatividad y la pasion por el exito, y estamos buscando personas que compartan los mismos valores."
+        "en": "If you are looking for an exciting opportunity to grow your career and be a part of a dynamic and innovative team, we would like to invite you to submit your resume. Our team values hard work, creativity, and a passion for success, and we are eager to find individuals who share these values.",
+        "it": "Se stai cercando una nuova ed entusiasmante opportunità professionale per entrare a fare parte di un team dinamico ed innovativo, vorremo invitarti ad inviare il tuo curriculum. La nostra squadra valora la creatività e la passione e siamo sempre alla ricerca di persone che condividano con noi questi valori.",
+        "es": "Si estas buscando una nueva y exitante oportunidad para crecer laboralmente y ser parte de un team dinamico e innovativo, nos gustaria invitarte a enviar tu curriculum. Nuestro grupo valora el trabajo duro, la creatividad y la pasion por el exito, y estamos buscando personas que compartan los mismos valores."
     },
     "PROJECTS_LEARN_MORE_WM_PREFIX": {
         "en": "Learn more about our ",
